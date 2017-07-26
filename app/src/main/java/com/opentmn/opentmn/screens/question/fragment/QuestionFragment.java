@@ -133,7 +133,7 @@ public class QuestionFragment extends BaseFragment implements QuestionView {
         mQuestionClickView.setEnabled(false);
         List<Answer> answers = question.getAnswers();
         for(int i = 0; i < answers.size(); i++) {
-            mAnswerButtons[i].setBackgroundResource(R.drawable.button_answer_selector);
+            mAnswerButtons[i].setBackgroundResource(R.mipmap.answer_quest_btn_1);
             mAnswerButtons[i].setText(answers.get(i).getName());
             mAnswerButtons[i].setEnabled(true);
         }
