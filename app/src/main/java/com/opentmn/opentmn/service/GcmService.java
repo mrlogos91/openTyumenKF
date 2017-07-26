@@ -78,14 +78,11 @@ public class GcmService extends FirebaseMessagingService {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);
-        Context context = getApplicationContext();
-        Resources res = context.getResources();
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
                 .setContentTitle(getString(R.string.app_name))
                 .setContentText(message)
-                .setLargeIcon(BitmapFactory.decodeResource(res, R.mipmap.app_icon))
                 .setSmallIcon(R.drawable.app_status_icon)
                 .setPriority(NotificationCompat.PRIORITY_MAX)
                 .setAutoCancel(true)
