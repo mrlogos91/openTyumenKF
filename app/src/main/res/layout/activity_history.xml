@@ -1,0 +1,118 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background_1"
+        android:scaleType="centerCrop"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shop_header_height"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/balance_top_substrate"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="26dp"
+                android:background="@mipmap/profile_games_substrate">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:id="@+id/wins_text_view"
+                        android:layout_width="@dimen/history_tab_width"
+                        android:layout_height="@dimen/history_tab_height"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/white"
+                        android:background="@mipmap/game_history_substrate_1"
+                        android:text="Победы"
+                        android:paddingBottom="2dp"
+                        app:customTypeface="@string/font_heavy_path"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:id="@+id/draws_text_view"
+                        android:layout_width="@dimen/history_tab_width"
+                        android:layout_height="@dimen/history_tab_height"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/white"
+                        android:background="@mipmap/game_history_substrate_2"
+                        android:text="Ничьи"
+                        android:paddingBottom="2dp"
+                        app:customTypeface="@string/font_heavy_path"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:id="@+id/loses_text_view"
+                        android:layout_width="@dimen/history_tab_width"
+                        android:layout_height="@dimen/history_tab_height"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/white"
+                        android:background="@mipmap/game_history_substrate_3"
+                        android:text="Поражения"
+                        android:paddingBottom="2dp"
+                        app:customTypeface="@string/font_heavy_path"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.opentmn.opentmn.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="История игр"/>
+
+</FrameLayout>

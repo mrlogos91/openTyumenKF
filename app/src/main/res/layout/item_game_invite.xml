@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp"
+            android:background="@mipmap/my_games_short_substrate">
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/rating_ava_substrate">
+
+                <ImageView
+                    android:id="@+id/enemy_ava_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="2dp"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/enemy_name_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/text_brown"
+                    app:customTypeface="@string/font_medium_path"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/accept_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_approve_selector"
+            android:layout_marginLeft="5dp">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/deny_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_deny_selector"
+            android:layout_marginLeft="5dp">
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

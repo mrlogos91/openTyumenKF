@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background_1"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/toolbar_height"
+            android:layout_marginLeft="@dimen/add_question_scroll_margin"
+            android:layout_marginRight="@dimen/add_question_scroll_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="@dimen/add_quest_title_text"
+                    android:textColor="@color/text_brown"
+                    android:text="@string/add_question_category_title"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/add_quest_required_margin_left"
+                    android:text="@string/add_question_required"
+                    android:textColor="@color/required_field"
+                    android:textSize="@dimen/add_quest_title_text"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/category_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/b_text_field_n">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/category_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/add_quest_edit_text"
+                    android:layout_marginLeft="@dimen/textfield_padding"
+                    android:textColor="@color/text_brown"
+                    app:customTypeface="@string/font_medium_path"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/dd_arrow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_photo_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:background="@mipmap/ask_quest_substrate"
+                        android:layout_marginBottom="24dp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/photo_image_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:scaleType="centerCrop"
+                            android:padding="0dp"
+                            app:riv_corner_radius="@dimen/add_photo_corner_radius"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="22dp">
+
+                        <Button
+                            android:id="@+id/edit_photo_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_edit_selector"/>
+
+                        <Button
+                            android:id="@+id/remove_photo_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:background="@drawable/button_remove_selector"/>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:textSize="@dimen/add_quest_title_text"
+                        android:textColor="@color/text_brown"
+                        android:text="@string/add_question_rights_title"
+                        app:customTypeface="fonts/FiraSans-Heavy.otf"
+                        />
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/add_quest_required_margin_left"
+                        android:text="@string/add_question_required"
+                        android:textColor="@color/required_field"
+                        android:textSize="@dimen/add_quest_title_text"
+                        app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+                </LinearLayout>
+
+                <com.opentmn.opentmn.widget.EditText
+                    android:id="@+id/rights_edit_text"
+                    android:layout_width="@dimen/b_textfield_width"
+                    android:layout_height="@dimen/b_textfield_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/b_text_field"
+                    android:singleLine="true"
+                    android:textSize="@dimen/add_quest_edit_text"
+                    android:textColor="@color/text_brown"
+                    app:customTypeface="@string/font_medium_path"/>
+
+                </LinearLayout>
+
+            <com.opentmn.opentmn.widget.Button
+                android:id="@+id/add_photo_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_add_photo_selector"
+                android:text="@string/add_question_photo_button"
+                android:textSize="13sp"
+                android:paddingBottom="@dimen/button_bottom_padding"
+                android:layout_gravity="center"
+                app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_brown"
+                    android:text="@string/add_question_quest_title"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_question_required"
+                    android:textColor="@color/required_field"
+                    android:textSize="@dimen/add_quest_title_text"
+                    android:layout_marginLeft="@dimen/add_quest_required_margin_left"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textarea_height"
+                    android:layout_weight="1"
+                    android:background="@mipmap/textarea_n"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/add_question_right_margin">
+
+                    <com.opentmn.opentmn.widget.EditText
+                        android:id="@+id/question_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:textSize="@dimen/add_quest_edit_text"
+                        android:textColor="@color/text_brown"
+                        android:maxLength="@integer/quest_max_length"
+                        app:customTypeface="@string/font_medium_path"/>
+
+                </FrameLayout>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/quest_count_text_view"
+                    android:layout_width="@dimen/add_question_right_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="@dimen/add_question_count_bottom_margin"
+                    android:textSize="@dimen/add_question_count_text"
+                    android:textColor="@color/add_question_count_text"
+                    android:gravity="center"
+                    app:customTypeface="@string/font_book_path"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="@dimen/add_quest_title_text"
+                    android:textColor="@color/text_brown"
+                    android:text="@string/add_question_source_title"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_question_required"
+                    android:textColor="@color/required_field"
+                    android:textSize="@dimen/add_quest_title_text"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+                </LinearLayout>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_question_source_desc"
+                android:textSize="9sp"
+                android:layout_marginLeft="22dp"
+                android:textColor="@color/text_brown_light"
+                android:layout_marginTop="-6dp"
+                app:customTypeface="@string/font_book_path"/>
+
+            <com.opentmn.opentmn.widget.EditText
+                android:id="@+id/source_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/b_textfield_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/b_text_field_n"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@color/text_brown"
+                app:customTypeface="@string/font_medium_path"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_brown"
+                    android:text="@string/add_question_author_title"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textColor="@color/required_field"
+                    android:textSize="18sp"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+            </LinearLayout>
+
+            <com.opentmn.opentmn.widget.EditText
+                android:id="@+id/author_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/b_textfield_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/b_text_field_n"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@color/text_brown"
+                app:customTypeface="@string/font_medium_path"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_brown"
+                    android:text="@string/add_question_answers_title"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_question_required"
+                    android:textColor="@color/required_field"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="4dp"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+                </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/add_question_right_margin"
+                    android:background="@mipmap/b_text_field_n">
+
+                    <com.opentmn.opentmn.widget.EditText
+                        android:id="@+id/answer_1_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_brown"
+                        android:maxLength="@integer/answer_max_length"
+                        app:customTypeface="@string/font_medium_path"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:src="@mipmap/right_answer"/>
+
+                </LinearLayout>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/answer_1_count_text_view"
+                    android:layout_width="@dimen/add_question_right_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/add_question_count_text"
+                    android:textColor="@color/add_question_count_text"
+                    android:text="12/35"
+                    android:gravity="center"
+                    app:customTypeface="@string/font_book_path"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/add_question_right_margin"
+                    android:background="@mipmap/b_text_field_n">
+
+                    <com.opentmn.opentmn.widget.EditText
+                        android:id="@+id/answer_2_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_brown"
+                        android:maxLength="@integer/answer_max_length"
+                        app:customTypeface="@string/font_medium_path"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:src="@mipmap/wrong_answer"/>
+
+                </LinearLayout>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/answer_2_count_text_view"
+                    android:layout_width="@dimen/add_question_right_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/add_question_count_text"
+                    android:textColor="@color/add_question_count_text"
+                    android:text="12/35"
+                    android:gravity="center"
+                    app:customTypeface="@string/font_book_path"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/add_question_right_margin"
+                    android:background="@mipmap/b_text_field_n">
+
+                    <com.opentmn.opentmn.widget.EditText
+                        android:id="@+id/answer_3_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_brown"
+                        android:maxLength="@integer/answer_max_length"
+                        app:customTypeface="@string/font_medium_path"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:src="@mipmap/wrong_answer"/>
+
+                </LinearLayout>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/answer_3_count_text_view"
+                    android:layout_width="@dimen/add_question_right_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/add_question_count_text"
+                    android:textColor="@color/add_question_count_text"
+                    android:text="12/35"
+                    android:gravity="center"
+                    app:customTypeface="@string/font_book_path"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/add_question_right_margin"
+                    android:background="@mipmap/b_text_field_n">
+
+                    <com.opentmn.opentmn.widget.EditText
+                        android:id="@+id/answer_4_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_brown"
+                        android:maxLength="@integer/answer_max_length"
+                        app:customTypeface="@string/font_medium_path"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:src="@mipmap/wrong_answer"/>
+
+                </LinearLayout>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/answer_4_count_text_view"
+                    android:layout_width="@dimen/add_question_right_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/add_question_count_text"
+                    android:textColor="@color/add_question_count_text"
+                    android:text="12/35"
+                    android:gravity="center"
+                    app:customTypeface="@string/font_book_path"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_brown"
+                    android:text="@string/add_question_ref_title"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textColor="@color/required_field"
+                    android:textSize="18sp"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+            </LinearLayout>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_question_ref_desc"
+                android:textSize="9sp"
+                android:layout_marginLeft="22dp"
+                android:textColor="@color/text_brown_light"
+                android:layout_marginTop="-6dp"
+                app:customTypeface="@string/font_book_path"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textarea_height"
+                    android:layout_marginRight="@dimen/add_question_right_margin"
+                    android:background="@mipmap/textarea_n"
+                    android:layout_marginTop="8dp">
+
+                    <com.opentmn.opentmn.widget.EditText
+                        android:id="@+id/ref_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:textSize="14sp"
+                        android:maxLength="@integer/ref_max_length"
+                        android:textColor="@color/text_brown"
+                        app:customTypeface="@string/font_medium_path"/>
+
+                </FrameLayout>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/ref_count_text_view"
+                    android:layout_width="@dimen/add_question_right_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:textSize="@dimen/add_question_count_text"
+                    android:textColor="@color/add_question_count_text"
+                    android:text="12/35"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/add_question_count_bottom_margin"
+                    app:customTypeface="@string/font_book_path"/>
+
+            </FrameLayout>
+
+            <CheckBox
+                android:id="@+id/check_box"
+                android:text="@string/add_question_check_box"
+                android:button="@drawable/check_box_auth_selector"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_brown"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                />
+
+            <com.opentmn.opentmn.widget.Button
+                android:id="@+id/send_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_blue_selector"
+                android:text="@string/add_question_send_button"
+                android:paddingBottom="@dimen/button_bottom_padding"
+                app:customTypeface="@string/font_heavy_path"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

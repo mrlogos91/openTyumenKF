@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="сom.opentmn.opentmn">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:name="com.opentmn.opentmn.app.AppDelegate"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OpenTmn">
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.splash.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.OpenTmn.Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.opentmn.opentmn.MainActivity"
+            android:screenOrientation="portrait">
+
+
+
+        </activity>
+        <activity
+            android:name="com.opentmn.opentmn.screens.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.restore.RestoreActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.login_by_email.AuthActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.registration.RegistrationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.question.QuestionsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.rules.ServiceRulesActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.category.CategoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.result.GameResultActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.choose_opponent.OpponentChooseActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.gift_detail.GiftDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.page.PageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.lobby.LobbyActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.opponent.OpponentActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.profile.ProfileActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.history.HistoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.opentmn.opentmn.screens.invite.InviteActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.opentmn.opentmn.screens.blacklist.BlackListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.opentmn.opentmn.screens.friends.FriendsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.opentmn.opentmn.screens.profile_edit.ProfileEditActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.opentmn.opentmn.screens.menu.MenuActivity"
+            android:theme="@style/Theme.OpenTmn.Menu"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.opentmn.opentmn.service.GcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.opentmn.opentmn.service.InstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.opentmn.opentmn.service.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6fbb557defe363d427299ec34dc0419c66a8331d" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.opentmn.opentmn.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.opentmn.opentmn.permission.C2D_MESSAGE" />
+</manifest>

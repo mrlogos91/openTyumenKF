@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background_1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/logo_margin_top"
+            android:src="@mipmap/logoshine"/>
+
+        <com.opentmn.opentmn.widget.EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/b_text_field"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:hint="@string/auth_email_placeholder"
+            android:layout_marginTop="-50dp"
+            android:textSize="14sp"
+            android:id="@+id/email_et"
+            app:customTypeface="@string/font_medium_path"/>
+
+        <com.opentmn.opentmn.widget.EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/b_text_field"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:hint="@string/auth_passwd_placeholder"
+            android:layout_marginTop="8dp"
+            android:password="true"
+            android:id="@+id/pass_et"
+            android:textSize="14sp"
+            app:customTypeface="@string/font_medium_path"/>
+
+        <CheckBox
+            android:text="@string/auth_personal_allow"
+            android:button="@drawable/check_box_auth_selector"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:gravity="left"
+            android:maxWidth="310dp"
+            android:textColor="@color/text_brown"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/checkBox"/>
+
+        <com.opentmn.opentmn.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue_selector"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:text="@string/auth_reg"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:id="@+id/enter"
+            app:customTypeface="@string/font_heavy_path"/>
+
+
+    </LinearLayout>
+
+    <com.opentmn.opentmn.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Регистрация"/>
+
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/window"
+            android:scaleType="fitXY"
+            android:layout_alignBottom="@+id/content_layout"
+            android:layout_alignRight="@+id/content_layout"
+            android:layout_alignLeft="@+id/content_layout"
+            android:layout_alignTop="@+id/content_layout"
+            android:layout_marginTop="35dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/alert_ava_width"
+                android:layout_height="@dimen/alert_ava_width"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/ava_substrate">
+
+                <ImageView
+                    android:id="@+id/ava_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/ava_placeholder_b"
+                    android:scaleType="centerCrop"/>
+
+            </FrameLayout>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                app:customTypeface="@string/font_heavy_path"/>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:text="@string/alert_smile_brief"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                app:customTypeface="@string/font_medium_path"/>
+
+            <ImageView
+                android:id="@+id/sticker_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/sticker_1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center_horizontal">
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_dialog_blue_selector"
+                    android:textSize="13sp"
+                    android:text="@string/alert_button_default"
+                    android:textColor="@android:color/white"
+                    android:paddingBottom="@dimen/dialog_button_bottom_padding"
+                    app:customTypeface="@string/font_heavy_path"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

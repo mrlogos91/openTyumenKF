@@ -1,0 +1,108 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="toolbar_height">55dp</dimen>
+    <dimen name="auth_logo_size">120dp</dimen>
+    <dimen name="logo_margin_top">-20dp</dimen>
+    <dimen name="nav_drawer_header_height">170dp</dimen>
+    <dimen name="nav_drawer_item_height">55dp</dimen>
+    <dimen name="nav_drawer_left_margin">11dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+
+    <!-- Question -->
+    <dimen name="answer_button_margin">22dp</dimen>
+    <dimen name="answer_button_height">82dp</dimen>
+    <dimen name="answer_button_width">151dp</dimen>
+    <dimen name="answer_button_padding">8dp</dimen>
+    <dimen name="question_num_1_width">22dp</dimen>
+    <dimen name="question_num_1_height">24dp</dimen>
+    <dimen name="question_num_2_width">34dp</dimen>
+    <dimen name="question_num_2_height">36dp</dimen>
+    <dimen name="question_num_3_width">46dp</dimen>
+    <dimen name="question_num_3_height">49dp</dimen>
+
+    <!-- Add question -->
+
+    <dimen name="add_quest_title_text">18sp</dimen>
+    <dimen name="add_quest_edit_text">14sp</dimen>
+    <dimen name="add_quest_required_margin_left">5dp</dimen>
+
+
+    <dimen name="friends_card_width">324dp</dimen>
+
+    <dimen name="gifts_list_top_margin">154dp</dimen>
+
+    <dimen name="rating_card_width">321dp</dimen>
+
+    <dimen name="b_textfield_width">314dp</dimen>
+    <dimen name="b_textfield_height">53dp</dimen>
+    <dimen name="textarea_width">315dp</dimen>
+    <dimen name="textarea_height">106dp</dimen>
+
+    <dimen name="textfield_padding">20dp</dimen>
+
+    <dimen name="gift_image_corner_radius">20dp</dimen>
+
+    <dimen name="message_dialog_title_top_margin">28dp</dimen>
+
+    <dimen name="shop_header_height">137dp</dimen>
+
+    <dimen name="lobby_round_width">313dp</dimen>
+    <dimen name="lobby_round_height">49dp</dimen>
+    <dimen name="lobby_ava_substrate_size">88dp</dimen>
+    <dimen name="lobby_ava_substrate_padding">5dp</dimen>
+    <dimen name="lobby_header_height">191dp</dimen>
+    <dimen name="lobby_header_width">320dp</dimen>
+    <dimen name="lobby_ava_container_width">95dp</dimen>
+
+    <dimen name="my_games_new_button_text_size">17sp</dimen>
+    <dimen name="my_games_finished_button_text_size">13sp</dimen>
+    <dimen name="my_games_finished_button_width">314sp</dimen>
+    <dimen name="my_games_finished_button_height">57sp</dimen>
+    <dimen name="my_games_finished_button_margin">16dp</dimen>
+    <dimen name="my_games_top_margin">156dp</dimen>
+
+    <dimen name="dialog_width">268dp</dimen>
+    <dimen name="dialog_button_bottom_padding">3dp</dimen>
+
+    <dimen name="profile_black_list_button_text_size">16sp</dimen>
+    <dimen name="profile_black_list_button_width">300dp</dimen>
+    <dimen name="profile_black_list_button_height">40dp</dimen>
+    <dimen name="profile_black_list_button_top_margin">8dp</dimen>
+
+    <dimen name="button_bottom_padding">3dp</dimen>
+    <dimen name="button_image_bottom_margin">2dp</dimen>
+    <dimen name="button_image_left_margin">18dp</dimen>
+
+    <dimen name="quest_pic_corner_radius">40dp</dimen>
+
+    <dimen name="history_tab_width">104dp</dimen>
+    <dimen name="history_tab_height">44dp</dimen>
+
+    <dimen name="add_photo_corner_radius">35dp</dimen>
+    <dimen name="game_status_text">13sp</dimen>
+    <dimen name="game_status_text_long">11sp</dimen>
+
+    <dimen name="captcha_img_corner_radius">22dp</dimen>
+
+    <dimen name="profile_edit_ava_background_height">170dp</dimen>
+    <dimen name="profile_edit_text_size">18sp</dimen>
+    <dimen name="profile_edit_edit_text_size">15sp</dimen>
+
+    <dimen name="alert_ava_width">90dp</dimen>
+
+    <dimen name="add_question_right_margin">25dp</dimen>
+    <dimen name="add_question_count_bottom_margin">12dp</dimen>
+    <dimen name="add_question_count_text">9sp</dimen>
+    <dimen name="add_question_scroll_margin">13dp</dimen>
+
+    <dimen name="profile_score_view_no_coins_margin">74dp</dimen>
+    <dimen name="profile_score_view_margin">28dp</dimen>
+    <dimen name="profile_score_view_vertical_margin">1dp</dimen>
+</resources>

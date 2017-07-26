@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background_1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/balance_top_substrate"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="36dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:text="Баланс"
+                        android:textColor="@color/text_brown"
+                        app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/substrate_coin_2"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_coin_2"/>
+
+                        <com.opentmn.opentmn.widget.TextView
+                            android:id="@+id/coins_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="23dp"
+                            android:textSize="21sp"
+                            android:textColor="@color/coin_green_text"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            app:customTypeface="@string/font_heavy_path"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="315dp"
+            android:layout_height="262dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:background="@mipmap/b_prize_substrate"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="306dp"
+                android:layout_height="169dp"
+                android:background="@mipmap/prize_pic_substrate_big"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal">
+                
+                <ImageView
+                    android:id="@+id/pic_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"/>
+
+            </FrameLayout>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:textColor="@color/text_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:text="Подарок"
+                app:customTypeface="@string/font_heavy_path"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/shop_coins_substrate_bordered"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="7dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_coin_1"/>
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:id="@+id/gift_coins_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="@color/coin_green_text"
+                        app:customTypeface="@string/font_heavy_path"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="21dp">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:id="@+id/count_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/game_end_text_red"
+                        android:textSize="15sp"
+                        android:text="12 шт."
+                        android:layout_gravity="center_horizontal"
+                        app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:textColor="@color/text_brown"
+                        android:textSize="11sp"
+                        android:text="осталось"
+                        app:customTypeface="fonts/FiraSans-Book.otf"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/gift_desc_text"
+                app:customTypeface="@string/font_book_path"/>
+        </ScrollView>
+
+        <com.opentmn.opentmn.widget.Button
+            android:id="@+id/buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_blue_selector"
+            android:text="Получить приз"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            app:customTypeface="@string/font_heavy_path"
+            />
+
+    </LinearLayout>
+
+    <com.opentmn.opentmn.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Подарок"/>
+
+</FrameLayout>

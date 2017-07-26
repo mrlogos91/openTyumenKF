@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/profile_friends"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp">
+
+        <com.opentmn.opentmn.widget.TextView
+            android:id="@+id/value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="0"
+            android:textColor="@color/text_brown"
+            app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+        <com.opentmn.opentmn.widget.TextView
+            android:id="@+id/subtitle_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_brown"
+            android:textSize="11sp"
+            android:text="друзей"
+            android:layout_marginTop="-7dp"
+            app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+    </LinearLayout>
+
+</LinearLayout>

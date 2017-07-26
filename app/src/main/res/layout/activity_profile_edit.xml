@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:focusableInTouchMode="true"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background_1"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_edit_ava_background_height"
+                android:background="@mipmap/edit_profile_ava_bg"
+                android:clipChildren="false">
+
+                <FrameLayout
+                    android:layout_width="118dp"
+                    android:layout_height="118dp"
+                    android:background="@mipmap/profile_ava_substrate"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:clipChildren="false"
+                    android:layout_marginBottom="-16dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/ava_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="6dp"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="56dp"/>
+
+                    <Button
+                        android:id="@+id/edit_ava_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@drawable/button_edit_selector"/>
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Личная информация"
+                android:textSize="22sp"
+                android:textColor="@color/profile_edit_text"
+                android:layout_marginTop="34dp"
+                app:customTypeface="@string/font_heavy_path"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/title_underline"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="@dimen/profile_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    android:text="Имя, фамилия"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.EditText
+                    android:id="@+id/name_edit_text"
+                    android:layout_width="@dimen/b_textfield_width"
+                    android:layout_height="@dimen/b_textfield_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/b_text_field"
+                    android:singleLine="true"
+                    android:textSize="@dimen/profile_edit_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    app:customTypeface="@string/font_medium_path"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="@dimen/profile_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    android:text="E-mail"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.EditText
+                    android:id="@+id/email_edit_text"
+                    android:layout_width="@dimen/b_textfield_width"
+                    android:layout_height="@dimen/b_textfield_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/b_text_field"
+                    android:singleLine="true"
+                    android:textSize="@dimen/profile_edit_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    app:customTypeface="@string/font_medium_path"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="@dimen/profile_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    android:text="Пол"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/gender_view"
+                    android:layout_width="@dimen/b_textfield_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/b_text_field">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:id="@+id/gender_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/profile_edit_edit_text_size"
+                        android:layout_marginLeft="@dimen/textfield_padding"
+                        android:textColor="@color/profile_edit_text"
+                        app:customTypeface="@string/font_medium_path"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:src="@mipmap/dd_arrow"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.opentmn.opentmn.widget.Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/button_blue_selector"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@android:color/white"
+                android:text="Сохранить"
+                app:customTypeface="@string/font_heavy_path"/>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Изменение пароля"
+                android:textSize="22sp"
+                android:textColor="@color/profile_edit_text"
+                app:customTypeface="@string/font_heavy_path"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/title_underline"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="@dimen/profile_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    android:text="Текущий пароль"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.EditText
+                    android:id="@+id/pass_current_edit_text"
+                    android:layout_width="@dimen/b_textfield_width"
+                    android:layout_height="@dimen/b_textfield_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/b_text_field"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/profile_edit_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    app:customTypeface="@string/font_medium_path"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="@dimen/profile_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    android:text="Новый пароль"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.EditText
+                    android:id="@+id/pass_new_edit_text"
+                    android:layout_width="@dimen/b_textfield_width"
+                    android:layout_height="@dimen/b_textfield_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/b_text_field"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/profile_edit_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    app:customTypeface="@string/font_medium_path"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="@dimen/profile_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    android:text="Подтверждение"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    />
+
+                <com.opentmn.opentmn.widget.EditText
+                    android:id="@+id/pass_confirm_edit_text"
+                    android:layout_width="@dimen/b_textfield_width"
+                    android:layout_height="@dimen/b_textfield_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/b_text_field"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/profile_edit_edit_text_size"
+                    android:textColor="@color/profile_edit_text"
+                    app:customTypeface="@string/font_medium_path"/>
+
+            </LinearLayout>
+
+            <com.opentmn.opentmn.widget.Button
+                android:id="@+id/change_pass_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/button_blue_selector"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@android:color/white"
+                android:text="Изменить пароль"
+                app:customTypeface="@string/font_heavy_path"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.opentmn.opentmn.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Мой профиль"/>
+
+</FrameLayout>

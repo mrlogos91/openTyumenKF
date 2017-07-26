@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_play"
+        android:icon="@mipmap/menu_ic_1"
+        android:title="@string/menu_item_play"/>
+    <item
+        android:id="@+id/nav_rate"
+        android:icon="@mipmap/menu_ic_2"
+        android:title="@string/menu_item_rating"/>
+    <item
+        android:id="@+id/nav_friends"
+        android:icon="@mipmap/menu_ic_3"
+        android:title="@string/menu_item_friends"/>
+    <item
+        android:id="@+id/nav_shop"
+        android:icon="@mipmap/menu_ic_4"
+        android:title="@string/menu_item_shop"/>
+    <item
+        android:id="@+id/nav_question"
+        android:icon="@mipmap/menu_ic_5"
+        android:title="@string/menu_item_add_question"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@mipmap/menu_ic_6"
+        android:title="@string/menu_item_profile"/>
+    <item
+        android:id="@+id/nav_rules"
+        android:icon="@mipmap/menu_ic_7"
+        android:title="@string/menu_item_rules"/>
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@mipmap/menu_ic_8"
+        android:title="@string/menu_item_logout"/>
+
+</menu>

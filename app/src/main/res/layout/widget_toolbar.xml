@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:src="@mipmap/app_bar"
+        android:scaleType="fitXY"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/action_bar_navigation_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/app_bar_btn_menu"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.opentmn.opentmn.widget.TextView
+            android:id="@+id/action_bar_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            app:customTypeface="fonts/FiraSans-Heavy.otf"
+            android:text="Открой свою Тюмень"/>
+
+        <ImageView
+            android:id="@+id/action_bar_right_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical|right"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/nav_click_layout"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"/>
+
+    <FrameLayout
+        android:id="@+id/right_click_layout"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="right"/>
+
+</merge>

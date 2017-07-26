@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Открой свою Тюмень</string>
+
+    <integer name="com_vk_sdk_AppId">5755635</integer>
+    <string name="fb">339670136401972</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    appbar_scrolling_view_behavior
+
+    //Auth
+    <string name="auth_title">Авторизация</string>
+    <string name="auth_login_through">Войти через</string>
+    <string name="auth_login">Войти</string>
+    <string name="auth_reg">Зарегистрироваться</string>
+    <string name="auth_restore">Восстановить пароль</string>
+    <string name="auth_email_placeholder">E-mail</string>
+    <string name="auth_passwd_placeholder">Пароль</string>
+    <string name="auth_forgot_passwd">Забыли пароль?</string>
+    <string name="auth_personal_allow">Я согласен на обработку моих персональных данных</string>
+
+
+    <string name="menu_item_play">Играть</string>
+    <string name="menu_item_rating">Рейтинг</string>
+    <string name="menu_item_friends">Друзья</string>
+    <string name="menu_item_shop">Магазин</string>
+    <string name="menu_item_add_question">Добавить вопрос</string>
+    <string name="menu_item_profile">Профиль</string>
+    <string name="menu_item_rules">Правила</string>
+    <string name="menu_item_logout">Выйти из аккаунта</string>
+    <string name="menu_item_tasks">Задания</string>
+
+    <string name="my_games_title">Мои игры</string>
+
+    //Network
+    <string name="progress_wait">Идет загрузка</string>
+    <string name="server_error">Сервер недоступен. Но вы держитесь.</string>
+    <string name="network_error">При загрузке данных произошла ошибка. \nПроверьте ваше подключение к сети.</string>
+
+    //Rating
+
+    <string name="search_hint">Поиск...</string>
+    
+    //Category
+    
+    <string name="choose_category_label">Выберите категорию</string>
+
+    <string name="font_heavy_path">fonts/FiraSans-Heavy.otf</string>
+    <string name="font_medium_path">fonts/FiraSans-Medium.otf</string>
+    <string name="font_book_path">fonts/FiraSans-Book.otf</string>
+    <string name="font_bold_path">fonts/FiraSans-Bold.otf</string>
+
+    <string name="error_api">На сервере произошла ошибка. Попробуйте позже.</string>
+    <string name="error_network">Не удалось подключиться к серверу. Проверьте подключение к сети Интернет и попробуйте снова.</string>
+
+    //Add question
+
+    <string name="rules_accept_needed">Необходимо принять правила приложения</string>
+    <string name="required_field_empty">Заполнены не все поля!</string>
+    <string name="add_question_success">Ваш вопрос отправлен на модерацию</string>
+    <string name="add_question_category_title">Выберите категорию</string>
+    <string name="add_question_rights_title">Авторские права</string>
+    <string name="add_question_photo_button">Добавить фото</string>
+    <string name="add_question_quest_title">Текст вопроса</string>
+    <string name="add_question_source_title">Источник</string>
+    <string name="add_question_source_desc">сайт, книга, журнал (откуда взята информации)</string>
+    <string name="add_question_author_title">Автор вопроса</string>
+    <string name="add_question_answers_title">Варианты ответа</string>
+    <string name="add_question_required"> *</string>
+    <string name="add_question_ref_title">Справка</string>
+    <string name="add_question_ref_desc">аргументация правильного ответа</string>
+    <string name="add_question_check_box">Я согласен с правилами приложения</string>
+    <string name="add_question_send_button">Отправить</string>
+
+    //Lobby
+    <string name="wait_enemy_end_round">Пожалуйста дождитесь окончания хода соперника!</string>
+    <string name="wait_enemy_choose_category">Пожалуйста дождитесь когда соперник выберет категорию!</string>
+    <string name="lobby_round_widget_enemy_choose_category">Ваш соперник выбирает категорию</string>
+    <string name="lobby_round_widget_choose_category">Вы выбираете категорию</string>
+    <string name="lobby_training_dialog_message">Очки рейтинга и монетки за тренировку не начисляются!</string>
+
+    //Game Status
+    <string name="game_status_choose_category">Вы выбираете\nкатегорию</string>
+    <string name="game_status_enemy_choose_category">Выбирает категорию</string>
+    <string name="game_status_enemy_play_round_1">Играет раунд 1</string>
+    <string name="game_status_enemy_play_round_2">Играет раунд 2</string>
+    <string name="game_status_enemy_play_round_3">Играет раунд 3</string>
+    <string name="game_status_my_turn">Ваш ход</string>
+    <string name="game_status_all_answered">Игра закончена</string>
+
+    //Socials
+    <string name="social_invite_text">Игра про любимый город! Докажи, что ты лучше других знаешь Тюмень!\nhttp://opentmn.ru/share</string>
+    <string name="social_share_win">Я победил %1$s в "Открой свою Тюмень"! Узнай о Тюмени больше!</string>
+    <string name="social_share_lose">Я и %1$s играем в "Открой свою Тюмень"! Узнай о Тюмени больше!</string>
+    <string name="social_share_draw">Я и %1$s играем в "Открой свою Тюмень"! Узнай о Тюмени больше!</string>
+
+    //Game result
+    <string name="game_result_smile_sent_title">Стикер</string>
+    <string name="game_result_smile_sent_text">Отправлен!</string>
+    <string name="game_result_draw_title">Ничья</string>
+    <string name="game_result_win_title">Вы победили!</string>
+    <string name="game_result_lose_title">Проиграли</string>
+    <string name="game_result_draw_pref">с игроком</string>
+    <string name="game_result_win_pref">игрока</string>
+    <string name="game_result_lose_pref">игроку</string>
+
+    //Alerts
+    <string name="alert_button_default">ОК</string>
+    <string name="alert_smile_brief">Отправил вам стикер</string>
+    <string name="alert_info_title">ИНФОРМАЦИЯ</string>
+    <string name="alert_success_title">УСПЕШНО</string>
+    <string name="alert_game_created_title">Игра создана</string>
+    <string name="alert_game_created_message">Вы сможете начать игру как только ваш соперник подтвердит запрос</string>
+    <string name="alert_gift_success_title">Ура!</string>
+    <string name="alert_gift_success_message">Ваш подарок ждет вас! Проверьте свой e-mail</string>
+    <string name="alert_gift_message">Для оформления заказа введите свой e-mail</string>
+    <string name="alert_error_title">Ошибка!</string>
+    <string name="alert_error_500_title">Ой!</string>
+    <string name="alert_error_500_message">Что-то пошло не так…</string>
+
+    <string name="yandex_api_key">249bcd5f-6455-48a1-8443-2fc0c9785eae</string>
+
+    <string name="profile_place">место</string>
+    <string name="profile_points">очков</string>
+    <string name="profile_coins">монет</string>
+    <string name="profile_friends">друзей</string>
+    <string-array name="friends_score">
+        <item>друзей</item>
+        <item>друг</item>
+        <item>друга</item>
+    </string-array>
+
+    <string-array name="points_score">
+        <item>очков</item>
+        <item>очко</item>
+        <item>очка</item>
+    </string-array>
+
+    <string-array name="coins_score">
+        <item>монет</item>
+        <item>монета</item>
+        <item>монеты</item>
+    </string-array>
+
+</resources>

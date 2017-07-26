@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="start">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/sidebar_bg"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_drawer_header_height"
+                android:src="@mipmap/sidebar_top_part"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="@dimen/nav_drawer_left_margin">
+
+                    <FrameLayout
+                        android:id="@+id/ava_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/menu_ava_substrate"
+                            android:layout_gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/ava_image_view"
+                            android:layout_width="81dp"
+                            android:layout_height="81dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/ava_placeholder_b"/>
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/nav_drawer_left_margin">
+
+                        <com.opentmn.opentmn.widget.TextView
+                            android:id="@+id/name_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="Иван Сергеевич"
+                            android:textSize="18sp"
+                            app:customTypeface="fonts/FiraSans-Bold.otf"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/substrate_coin_1"
+                                    android:layout_marginTop="7dp"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/ic_coin_1"
+                                    android:layout_marginLeft="-5dp"
+                                    android:layout_gravity="center_vertical"/>
+
+                                <com.opentmn.opentmn.widget.TextView
+                                    android:id="@+id/score_text_view"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:textColor="@color/coin_green_text"
+                                    android:layout_marginLeft="34dp"
+                                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                                    />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/nav_drawer_left_margin">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/substrate_coin_1"
+                                    android:layout_marginTop="7dp"/>
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@mipmap/profile_ic_star"
+                                    android:layout_marginLeft="-3dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_gravity="center_vertical"/>
+
+                                <com.opentmn.opentmn.widget.TextView
+                                    android:id="@+id/score_points_text_view"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:textColor="@color/text_blue_tr"
+                                    android:layout_marginLeft="34dp"
+                                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                                    />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dp">
+
+                    <LinearLayout
+                        android:id="@+id/friends_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/menu_ic_friends_copy"/>
+
+                        <com.opentmn.opentmn.widget.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_edit_text"
+                            android:textSize="16sp"
+                            android:text="@string/menu_item_friends"
+                            app:customTypeface="@string/font_medium_path"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rating_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/menu_ic_rating_copy"/>
+
+                        <com.opentmn.opentmn.widget.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_edit_text"
+                            android:textSize="16sp"
+                            android:text="@string/menu_item_rating"
+                            app:customTypeface="@string/font_medium_path"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shop_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/menu_ic_shop_copy"/>
+
+                        <com.opentmn.opentmn.widget.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_edit_text"
+                            android:textSize="16sp"
+                            android:text="@string/menu_item_shop"
+                            app:customTypeface="@string/font_medium_path"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/play_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_blue_selector"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/menu_item_play"
+                    android:layout_marginTop="26dp"
+                    app:customTypeface="@string/font_heavy_path"/>
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/tasks_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_menu_green_selector"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/menu_item_tasks"
+                    android:layout_marginTop="21dp"
+                    app:customTypeface="@string/font_heavy_path"/>
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/add_question_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_menu_green_selector"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/menu_item_add_question"
+                    android:layout_marginTop="10dp"
+                    app:customTypeface="@string/font_heavy_path"/>
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/rules_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_menu_green_selector"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/menu_item_rules"
+                    android:layout_marginTop="10dp"
+                    app:customTypeface="@string/font_heavy_path"/>
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/logout_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_menu_red_selector"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/menu_item_logout"
+                    android:layout_marginTop="10dp"
+                    app:customTypeface="@string/font_heavy_path"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

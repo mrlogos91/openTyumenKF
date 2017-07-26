@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#EE5C4F</color>
+    <color name="colorAccent">#EE5C4F</color>
+
+    <color name="text_brown">#CC391F33</color>
+    <color name="text_brown_light">#7F392033</color>
+    <color name="text_brown_fact">#99391F33</color>
+    <color name="text_blue_tr">#CC3F92BF</color>
+    <color name="text_blue">#3A92C2</color>
+    <color name="text_red">#EE5C4F</color>
+    <color name="game_end_text_red">#F15B4A</color>
+    <color name="gift_desc_text">#392033</color>
+    <color name="rules_background">#FEE577</color>
+    <color name="hint_background">#CC392033</color>
+
+    <color name="lobby_round_title">@color/gift_desc_text</color>
+    <color name="lobby_round_subtitle">@color/hint_background</color>
+    <color name="lobby_score_red">#EE5C4F</color>
+    <color name="lobby_score_yellow">#F9C050</color>
+    <color name="lobby_score_green">#49C9B0</color>
+
+    <color name="coin_green_text">#CC369783</color>
+    <color name="coin_score_view_text">#369783</color>
+
+    <color name="game_time_title_text">#9B8471</color>
+    <color name="game_time_value_text">@color/hint_background</color>
+    <color name="game_status_green">@color/lobby_score_green</color>
+    <color name="game_status_red">#CCEE5C4F</color>
+
+    <color name="history_text_red">#CCEE5C4F</color>
+    <color name="history_text_yellow">#CCF9C050</color>
+    <color name="history_text_green">#CC49C9B0</color>
+
+    <color name="required_field">#EE5C4F</color>
+
+    <color name="favorite_category_1">#F18664</color>
+    <color name="favorite_category_2">#4FB9F3</color>
+    <color name="favorite_category_3">#49C9B0</color>
+
+    <color name="profile_edit_text">#CC392033</color>
+    <color name="game_result_enemy_name">#3F92BF</color>
+
+    <color name="add_question_count_text">@color/gift_desc_text</color>
+
+    <color name="menu_status_bar">#F07756</color>
+</resources>

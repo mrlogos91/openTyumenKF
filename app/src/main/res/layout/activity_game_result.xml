@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/congrat_bg_1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/toolbar_height"
+                android:orientation="vertical">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/result_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="33sp"
+                    android:textColor="@color/game_end_text_red"
+                    android:text="Вы победили"
+                    app:customTypeface="fonts/FiraSans-Heavy.otf"
+                    android:layout_marginTop="-12dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="6dp">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:id="@+id/enemy_name_pref_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="игрока"
+                        android:textSize="20sp"
+                        android:textColor="@color/profile_edit_text"
+                        android:layout_gravity="bottom"
+                        app:customTypeface="@string/font_heavy_path"/>
+                    <com.opentmn.opentmn.widget.TextView
+                        android:id="@+id/enemy_name_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Иван сергеевич"
+                        android:textSize="20sp"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/game_result_enemy_name"
+                        android:layout_marginLeft="5dp"
+                        app:customTypeface="@string/font_heavy_path"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/congrat_title_underline"/>
+
+                <FrameLayout
+                    android:id="@+id/score_view"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/congrat_plus_scores_2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="84dp">
+
+                        <com.opentmn.opentmn.widget.TextView
+                            android:id="@+id/points_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="30sp"
+                            android:textColor="@color/text_blue_tr"
+                            android:text="0"
+                            android:layout_gravity="center_horizontal"
+                            app:customTypeface="fonts/FiraSans-Heavy.otf"
+                            />
+
+                        <com.opentmn.opentmn.widget.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_blue"
+                            android:text="очков"
+                            android:layout_marginTop="-12dp"
+                            app:customTypeface="fonts/FiraSans-Heavy.otf"
+                            />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/score_win_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/substrate_coin_4"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="8dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_star"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="75dp">
+
+                            <com.opentmn.opentmn.widget.TextView
+                                android:id="@+id/win_points_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="25sp"
+                                android:textColor="@color/text_blue_tr"
+                                android:text="0"
+                                android:layout_gravity="center_horizontal"
+                                app:customTypeface="fonts/FiraSans-Heavy.otf"
+                                />
+
+                            <com.opentmn.opentmn.widget.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@color/text_blue"
+                                android:text="очков"
+                                android:layout_marginTop="-8dp"
+                                app:customTypeface="fonts/FiraSans-Heavy.otf"
+                                />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/substrate_coin_4"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="8dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_coin_4"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="75dp">
+
+                            <com.opentmn.opentmn.widget.TextView
+                                android:id="@+id/win_coins_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="25sp"
+                                android:textColor="@color/coin_green_text"
+                                android:text="0"
+                                android:layout_gravity="center_horizontal"
+                                app:customTypeface="fonts/FiraSans-Heavy.otf"
+                                />
+
+                            <com.opentmn.opentmn.widget.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@color/coin_green_text"
+                                android:text="монет"
+                                android:layout_marginTop="-8dp"
+                                app:customTypeface="fonts/FiraSans-Heavy.otf"
+                                />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/stickers_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="22sp"
+                        android:textColor="@color/text_brown"
+                        android:text="Отправь стикер сопернику"
+                        android:layout_marginTop="15dp"
+                        app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/title_underline"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/sticker_1_view"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="-8dp">
+                            
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/sticker_1"
+                                android:layout_gravity="center"
+                                />
+                            
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/sticker_2_view"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="16dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/sticker_2"
+                                android:layout_gravity="center"
+                                />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/sticker_3_view"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="-8dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/sticker_3"
+                                android:layout_gravity="center"
+                                />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/share_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.opentmn.opentmn.widget.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_brown"
+                        android:textSize="22sp"
+                        android:text="Поделиться"
+                        app:customTypeface="fonts/FiraSans-Heavy.otf"
+                        />
+
+                    <Button
+                        android:id="@+id/vk_share_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/congrat_share_vk_selector" />
+
+                    <Button
+                        android:id="@+id/fb_share_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="11dp"
+                        android:background="@drawable/congrat_share_fb_selector"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="17dp">
+
+                    <com.opentmn.opentmn.widget.Button
+                        android:id="@+id/menu_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="Закрыть"
+                        android:background="@drawable/button_congrat_red_selector"
+                        android:paddingBottom="4dp"
+                        app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+                    <com.opentmn.opentmn.widget.Button
+                        android:id="@+id/play_again_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="Сыграть еще раз"
+                        android:background="@drawable/button_congrat_blue_selector"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="4dp"
+                        app:customTypeface="fonts/FiraSans-Heavy.otf"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.opentmn.opentmn.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Игра закончена"/>
+
+</FrameLayout>

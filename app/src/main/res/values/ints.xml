@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="answer_max_length">24</integer>
+    <integer name="quest_max_length">95</integer>
+    <integer name="ref_max_length">95</integer>
+</resources>
