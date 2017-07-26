@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 import butterknife.BindView;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 23.01.17.

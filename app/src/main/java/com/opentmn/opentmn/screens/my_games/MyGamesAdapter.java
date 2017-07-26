@@ -18,7 +18,7 @@ import com.opentmn.opentmn.screens.profile.viewholder.ButtonViewHolder;
 import java.util.ArrayList;
 import java.util.List;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 14.01.17.

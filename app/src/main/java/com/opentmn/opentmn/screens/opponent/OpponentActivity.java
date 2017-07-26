@@ -17,7 +17,7 @@ import com.vk.sdk.VKCallback;
 import com.vk.sdk.VKSdk;
 import com.vk.sdk.api.VKError;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 import static com.opentmn.opentmn.Config.LOG_TAG;
 

@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 23.12.16.

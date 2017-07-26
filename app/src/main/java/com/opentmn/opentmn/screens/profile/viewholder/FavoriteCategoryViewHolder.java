@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.opentmn.opentmn.model.Category;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 31.12.16.

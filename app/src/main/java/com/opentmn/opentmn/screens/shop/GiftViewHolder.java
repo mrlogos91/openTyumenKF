@@ -12,7 +12,7 @@ import com.opentmn.opentmn.model.Gift;
 import com.opentmn.opentmn.screens.base.BaseViewHolder;
 
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 03.01.17.

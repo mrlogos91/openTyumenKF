@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.opentmn.opentmn.screens.base.BaseViewHolder;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 
 /**

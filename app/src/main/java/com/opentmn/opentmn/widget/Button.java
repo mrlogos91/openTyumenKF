@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 
 import com.opentmn.opentmn.utils.FontHelper;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 03.01.17.

@@ -8,7 +8,7 @@ import com.facebook.appevents.AppEventsLogger;
 import com.vk.sdk.VKSdk;
 
 import io.fabric.sdk.android.Fabric;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 import com.opentmn.opentmn.data.RepositoryProvider;
 import com.yandex.metrica.YandexMetrica;

@@ -10,7 +10,7 @@ import com.opentmn.opentmn.screens.base.BaseActivity;
 import com.opentmn.opentmn.screens.login.LoginActivity;
 import com.opentmn.opentmn.screens.menu.MenuActivity;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by Alexey Antonchik on 21.12.16.

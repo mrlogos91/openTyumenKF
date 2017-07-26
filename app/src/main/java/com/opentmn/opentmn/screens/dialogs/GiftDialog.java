@@ -15,7 +15,7 @@ import android.widget.EditText;
 import com.opentmn.opentmn.data.RepositoryProvider;
 import com.opentmn.opentmn.model.User;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 25.01.17.

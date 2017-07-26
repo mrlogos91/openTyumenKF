@@ -14,7 +14,7 @@ import com.opentmn.opentmn.utils.RxSchedulers;
 import java.util.List;
 
 import rx.Subscription;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 22.01.17.

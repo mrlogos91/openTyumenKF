@@ -15,7 +15,7 @@ import com.opentmn.opentmn.screens.base.GameViewHolder;
 import java.util.ArrayList;
 import java.util.List;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 21.01.17.

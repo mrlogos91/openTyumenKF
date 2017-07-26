@@ -26,7 +26,7 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import rx.Subscription;
 import rx.subscriptions.CompositeSubscription;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 13.12.16.

@@ -17,7 +17,7 @@ import com.bumptech.glide.Glide;
 import com.opentmn.opentmn.Config;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 25.01.17.

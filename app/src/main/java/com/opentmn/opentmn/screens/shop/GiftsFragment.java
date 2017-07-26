@@ -22,7 +22,7 @@ import com.opentmn.opentmn.widget.Toolbar;
 
 import java.util.List;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 03.01.17.

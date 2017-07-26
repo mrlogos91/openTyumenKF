@@ -20,7 +20,7 @@ import com.opentmn.opentmn.network.model.ApiResponseModel;
 import com.opentmn.opentmn.screens.base.BaseView;
 
 import rx.Subscription;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by Alexey Antonchik on 15.12.16.

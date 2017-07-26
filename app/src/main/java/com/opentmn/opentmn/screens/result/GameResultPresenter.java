@@ -11,7 +11,7 @@ import com.opentmn.opentmn.model.User;
 import com.opentmn.opentmn.utils.RxSchedulers;
 
 import rx.Subscription;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 11.01.17.

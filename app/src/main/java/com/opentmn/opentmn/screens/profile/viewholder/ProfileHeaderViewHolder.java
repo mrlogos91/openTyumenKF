@@ -17,7 +17,7 @@ import com.opentmn.opentmn.widget.Button;
 import com.opentmn.opentmn.widget.ScoreView;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 31.12.16.

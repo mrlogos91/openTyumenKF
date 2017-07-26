@@ -22,7 +22,7 @@ import com.opentmn.opentmn.screens.invite.InviteAdapter;
 import com.opentmn.opentmn.screens.rating.RatingAdapter;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 03.01.17.

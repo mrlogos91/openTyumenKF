@@ -13,7 +13,7 @@ import com.opentmn.opentmn.screens.profile.ProfileAdapter;
 import com.opentmn.opentmn.utils.FontHelper;
 import com.opentmn.opentmn.widget.Button;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 07.01.17.

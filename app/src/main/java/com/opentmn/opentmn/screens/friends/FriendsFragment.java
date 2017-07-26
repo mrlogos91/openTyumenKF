@@ -34,7 +34,7 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.Observable;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 import static com.opentmn.opentmn.Config.LOG_TAG;
 

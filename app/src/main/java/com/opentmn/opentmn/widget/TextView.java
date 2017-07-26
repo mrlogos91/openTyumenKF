@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 
 import com.opentmn.opentmn.utils.FontHelper;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 
 public class TextView extends android.widget.TextView {

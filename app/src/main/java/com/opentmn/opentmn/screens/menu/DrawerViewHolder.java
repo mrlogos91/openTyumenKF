@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.opentmn.opentmn.screens.base.BaseViewHolder;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 
 /**

@@ -8,7 +8,7 @@ import android.widget.TextView;
 import java.util.HashMap;
 import java.util.Map;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 03.01.17.

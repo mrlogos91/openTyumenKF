@@ -11,7 +11,7 @@ import android.webkit.WebView;
 import com.opentmn.opentmn.model.Page;
 import com.opentmn.opentmn.screens.base.BaseFragment;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 12.01.17.

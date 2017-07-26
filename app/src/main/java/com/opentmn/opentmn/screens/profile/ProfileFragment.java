@@ -20,7 +20,7 @@ import com.opentmn.opentmn.screens.friends.FriendsActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 31.12.16.

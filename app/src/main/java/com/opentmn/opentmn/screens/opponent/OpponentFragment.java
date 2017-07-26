@@ -25,7 +25,7 @@ import com.vk.sdk.api.VKError;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 import static com.opentmn.opentmn.Config.LOG_TAG;
 

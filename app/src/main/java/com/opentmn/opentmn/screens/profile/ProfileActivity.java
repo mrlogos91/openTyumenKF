@@ -10,7 +10,7 @@ import com.opentmn.opentmn.model.User;
 import com.opentmn.opentmn.screens.base.BaseActivity;
 import com.opentmn.opentmn.widget.Toolbar;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 31.12.16.

@@ -12,7 +12,7 @@ import com.opentmn.opentmn.screens.base.BaseViewHolder;
 import java.util.ArrayList;
 import java.util.List;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 03.01.17.

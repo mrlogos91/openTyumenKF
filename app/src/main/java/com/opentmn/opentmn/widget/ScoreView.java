@@ -11,7 +11,7 @@ import android.widget.*;
 import android.widget.TextView;
 
 import butterknife.BindView;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 31.12.16.

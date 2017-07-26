@@ -17,7 +17,7 @@ import com.opentmn.opentmn.screens.rating.RatingAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 01.01.17.

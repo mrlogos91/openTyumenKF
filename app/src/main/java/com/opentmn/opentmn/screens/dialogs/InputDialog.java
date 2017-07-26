@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.vk.sdk.api.VKApi;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 22.01.17.

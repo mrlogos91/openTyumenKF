@@ -26,7 +26,7 @@ import com.opentmn.opentmn.screens.result.GameResultActivity;
 
 import java.util.List;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 14.01.17.

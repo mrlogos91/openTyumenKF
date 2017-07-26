@@ -18,7 +18,7 @@ import com.opentmn.opentmn.screens.base.TitleViewHolder;
 
 import java.util.List;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 31.12.16.

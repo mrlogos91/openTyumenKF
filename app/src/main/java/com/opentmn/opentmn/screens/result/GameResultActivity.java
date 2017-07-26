@@ -29,7 +29,7 @@ import com.vk.sdk.dialogs.VKShareDialogBuilder;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 03.01.17.

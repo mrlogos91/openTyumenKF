@@ -42,7 +42,7 @@ android {
     signingConfigs {
         release {
             //storeFile file('/Users/salomon/GitProjects/my_tyumen/mytyumen.jks')
-            storeFile file('/Users/kost/android/my-tyumen-android/mytyumen.jks')
+            storeFile file('/mytyumen.jks')
             keyAlias 'mytyumen'
             keyPassword '123456'
             storePassword '123456'

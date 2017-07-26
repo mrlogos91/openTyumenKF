@@ -12,7 +12,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 13.01.17.

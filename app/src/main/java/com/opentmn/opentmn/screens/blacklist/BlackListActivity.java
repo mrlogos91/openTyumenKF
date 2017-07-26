@@ -19,7 +19,7 @@ import com.opentmn.opentmn.widget.Toolbar;
 import java.util.List;
 
 import rx.Observable;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by kost on 18.01.17.

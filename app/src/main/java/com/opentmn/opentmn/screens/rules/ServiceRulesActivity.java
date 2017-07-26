@@ -13,7 +13,7 @@ import com.opentmn.opentmn.widget.Toolbar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import сom.opentmn.opentmn.R;
+import com.opentmn.opentmn.R;
 
 /**
  * Created by Alexey Antonchik on 26.12.16.
