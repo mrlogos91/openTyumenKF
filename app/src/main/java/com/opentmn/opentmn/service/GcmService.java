@@ -76,6 +76,7 @@ public class GcmService extends FirebaseMessagingService {
         Log.d(TAG, "sendNotification");
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("fragment_id", 2131689859);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);
 
