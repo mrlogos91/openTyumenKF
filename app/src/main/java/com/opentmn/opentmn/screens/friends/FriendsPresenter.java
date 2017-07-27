@@ -54,16 +54,22 @@ public class FriendsPresenter {
                     @Override
                     public Observable<ApiResponseModel<List<User>>> call(TextViewTextChangeEvent textViewTextChangeEvent) {
                         mSearchString = textViewTextChangeEvent.text().toString();
-                        if(mSearchString.length() == 0)
-                            mSearchString = null;
-                        return mRepository.users(mToken, 1, PER_PAGE, mSearchString, 1, 0).compose(RxSchedulers.async());
+                        return mRepository.users(mToken, 1, PER_PAGE, null, 1, 0).compose(RxSchedulers.async());
                     }
                 })
                 .subscribe(data -> {
                     if(data.isSuccess()){
                         List<User> users = data.getData();
                         mCurrentPage = 1;
-                        mUsers = users;
+                        if(mSearchString.length() == 0) {
+                          mUsers = users;
+                        } else {
+                          for (User user : users) {
+                            if (user.getName().toLowerCase().contains(mSearchString.toLowerCase())) {
+                              mUsers.add(user);
+                            }
+                          }
+                        }
                         mListEnded = users.size() == 0;
                         mFriendsView.showFriends(mUsers);
                     } else {
