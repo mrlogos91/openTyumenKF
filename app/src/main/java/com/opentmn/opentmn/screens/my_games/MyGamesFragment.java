@@ -166,8 +166,18 @@ public class MyGamesFragment extends BaseFragment implements MyGamesView, MyGame
 
     @Override
     public void showWaitDialog(Game game) {
-        MessageDialog messageDialog = MessageDialog.getInstance("ИНФОРМАЦИЯ", "Пользователь " + game.getFollower().getName() + " пока не принял запрос");
-        messageDialog.show(getActivity().getSupportFragmentManager(), "info");
+        ConfirmDialog confirmDialog = ConfirmDialog.getInstance("ИНФОРМАЦИЯ", "Пользователь " + game.getFollower().getName() + " пока не принял запрос", "Отменить", "Ждать");
+        confirmDialog.show(getActivity().getSupportFragmentManager(), "info");
+        confirmDialog.setOnDialogButtonClickListener(new ConfirmDialog.OnDialogButtonClickListener() {
+            @Override
+            public void onCancelClick() {
+                mPresenter.onDenyClick(game);
+            }
+
+            @Override
+            public void onConfirmClick() {
+            }
+        });
     }
 
     @Override
@@ -194,9 +204,19 @@ public class MyGamesFragment extends BaseFragment implements MyGamesView, MyGame
     }
 
     @Override
-    public void showNoFollowerDialog() {
-        MessageDialog messageDialog = MessageDialog.getInstance("ИНФОРМАЦИЯ", "К этой игре пока никто не подключился");
-        messageDialog.show(getActivity().getSupportFragmentManager(), "info");
+    public void showNoFollowerDialog(Game game) {
+        ConfirmDialog confirmDialog = ConfirmDialog.getInstance("ИНФОРМАЦИЯ", "К этой игре пока никто не подключился", "Отменить", "Ждать");
+        confirmDialog.show(getActivity().getSupportFragmentManager(), "info");
+        confirmDialog.setOnDialogButtonClickListener(new ConfirmDialog.OnDialogButtonClickListener() {
+            @Override
+            public void onCancelClick() {
+                mPresenter.onDenyClick(game);
+            }
+
+            @Override
+            public void onConfirmClick() {
+            }
+        });
     }
 
     @Override

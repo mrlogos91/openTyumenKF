@@ -29,7 +29,7 @@ public interface MyGamesView extends BaseView {
 
     void showSoonDialog();
 
-    void showNoFollowerDialog();
+    void showNoFollowerDialog(Game game);
 
     void startGameResult(GameResult gameResult);
 

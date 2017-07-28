@@ -20,6 +20,8 @@ import com.opentmn.opentmn.R;
 
 public class ConfirmDialog extends DialogFragment {
 
+    private final static String BUNDLE_CANCEL_KEY = "cancel";
+    private final static String BUNDLE_OK_KEY = "ok";
     private final static String BUNDLE_TITLE_KEY = "title";
     private final static String BUNDLE_SUBTITLE_KEY = "subtitle";
 
@@ -30,6 +32,18 @@ public class ConfirmDialog extends DialogFragment {
         Bundle args = new Bundle();
         args.putString(BUNDLE_TITLE_KEY, title);
         args.putString(BUNDLE_SUBTITLE_KEY, message);
+        args.putString(BUNDLE_CANCEL_KEY, "Нет");
+        args.putString(BUNDLE_OK_KEY, "Да");
+        dialog.setArguments(args);
+        return dialog;
+    }
+    public static ConfirmDialog getInstance(String title, String message, String cancel, String ok) {
+        ConfirmDialog dialog = new ConfirmDialog();
+        Bundle args = new Bundle();
+        args.putString(BUNDLE_TITLE_KEY, title);
+        args.putString(BUNDLE_SUBTITLE_KEY, message);
+        args.putString(BUNDLE_CANCEL_KEY, cancel);
+        args.putString(BUNDLE_OK_KEY, ok);
         dialog.setArguments(args);
         return dialog;
     }
@@ -51,11 +65,17 @@ public class ConfirmDialog extends DialogFragment {
         Bundle args = getArguments();
         String title = args.getString(BUNDLE_TITLE_KEY);
         String subtitle = args.getString(BUNDLE_SUBTITLE_KEY);
+        String cancel = args.getString(BUNDLE_CANCEL_KEY);
+        String ok = args.getString(BUNDLE_OK_KEY);
 
         TextView titleTextView = (TextView) view.findViewById(R.id.title_text_view);
         titleTextView.setText(title);
         TextView subtitleTextView = (TextView) view.findViewById(R.id.subtitle_text_view);
         subtitleTextView.setText(subtitle);
+        Button button_cancel = (Button) view.findViewById(R.id.button_cancel);
+        button_cancel.setText(cancel);
+        Button button_confirm = (Button) view.findViewById(R.id.button_confirm);
+        button_confirm.setText(ok);
 
         Button cancelButton = (Button) view.findViewById(R.id.button_cancel);
         cancelButton.setOnClickListener(new View.OnClickListener() {

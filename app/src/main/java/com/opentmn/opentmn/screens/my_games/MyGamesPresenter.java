@@ -142,7 +142,7 @@ public class MyGamesPresenter {
                             } else if(status == GameStatus.WAIT) {
                                 mMyGamesView.showWaitDialog(game1);
                             } else if(status == GameStatus.NO_FOLLOWER) {
-                                mMyGamesView.showNoFollowerDialog();
+                                mMyGamesView.showNoFollowerDialog(game1);
                             }
                         } else {
                             mMyGamesView.showApiResponseError(response, () -> onGameClick(game));

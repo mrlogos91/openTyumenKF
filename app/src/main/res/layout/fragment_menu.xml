@@ -255,15 +255,16 @@
                     app:customTypeface="@string/font_heavy_path"/>
 
                 <com.opentmn.opentmn.widget.Button
-                    android:id="@+id/tasks_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_menu_green_selector"
-                    android:textSize="13sp"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/menu_item_tasks"
-                    android:layout_marginTop="21dp"
-                    app:customTypeface="@string/font_heavy_path"/>
+                  android:id="@+id/tasks_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="21dp"
+                  android:layout_gravity="center_horizontal"
+                  android:background="@drawable/button_menu_green_selector"
+                  android:text="@string/menu_item_tasks"
+                  android:textSize="13sp"
+                  android:visibility="gone"
+                  app:customTypeface="@string/font_heavy_path"/>
 
                 <com.opentmn.opentmn.widget.Button
                     android:id="@+id/add_question_button"
