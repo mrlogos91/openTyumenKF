@@ -32,12 +32,14 @@ public class RegistrationActivity extends BaseActivity implements RegistrationVi
 
     @OnClick(R.id.enter) void enterClick(){
         if(mCheckBox.isChecked()) {
-            mRegistrationPresenter.auth(mEmailEdit.getText().toString(), mPassEdit.getText().toString());
+            mRegistrationPresenter.auth(mEmailEdit.getText().toString(), mPassEdit.getText().toString(), mNameEdit.getText().toString());
         }else {
             //TODO
             showToast("Необходимо согласие на обработку персональных данных");
         }
     }
+    @BindView(R.id.name_et)
+    EditText mNameEdit;
     @BindView(R.id.email_et)
     EditText mEmailEdit;
     @BindView(R.id.pass_et)

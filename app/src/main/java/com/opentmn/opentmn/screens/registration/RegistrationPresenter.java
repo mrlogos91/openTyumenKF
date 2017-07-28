@@ -1,6 +1,7 @@
 package com.opentmn.opentmn.screens.registration;
 
 import com.opentmn.opentmn.data.RepositoryProvider;
+import com.opentmn.opentmn.model.User;
 import com.opentmn.opentmn.utils.RxSchedulers;
 
 import rx.Subscription;
@@ -12,7 +13,7 @@ import rx.Subscription;
 public class RegistrationPresenter  {
 
     private RegistrationView mRegistrationView;
-
+  private User mUser;
 
     public RegistrationPresenter(RegistrationView registrationView) {
         mRegistrationView = registrationView;
@@ -21,8 +22,27 @@ public class RegistrationPresenter  {
     public void init(){
         mRegistrationView.init();
     }
-
-    void auth(String email, String pass){
+    void setName(String email, String name){
+      mUser = RepositoryProvider.provideKeyValueStorage().getUser();
+      Subscription subscriptionName = RepositoryProvider.provideRepository().updateProfile(mUser.getToken(), null, null, null, name, email, null)
+          .compose(RxSchedulers.async())
+          .doOnSubscribe(mRegistrationView::showProgress)
+          .doAfterTerminate(mRegistrationView::hideProgress)
+          .subscribe(response -> {
+            if(response.isSuccess()) {
+              mUser.setName(name);
+              mUser.setEmail(email);
+              mRegistrationView.startMain();
+            } else {
+              mRegistrationView.showApiResponseError(response, null);
+            }
+          }, throwable -> {
+            mRegistrationView.hideProgress();
+            mRegistrationView.showNetworkError(null);
+          });
+      mRegistrationView.addSubscription(subscriptionName);
+    }
+    void auth(String email, String pass, String name){
 
         //TODO валидация email и pass
 
@@ -33,8 +53,8 @@ public class RegistrationPresenter  {
                 .subscribe(data -> {
                     if(data.isSuccess()){
                         RepositoryProvider.provideKeyValueStorage().setUser(data.getData());
-                        mRegistrationView.startMain();
-                    }else {
+                        setName(email, name);
+                     }else {
                         mRegistrationView.showApiResponseError(data, null);
                     }
 
