@@ -8,6 +8,7 @@ import com.opentmn.opentmn.data.repository.MyTyumenRepository;
 import com.opentmn.opentmn.model.Game;
 import com.opentmn.opentmn.model.SocialUser;
 import com.opentmn.opentmn.model.User;
+import com.opentmn.opentmn.utils.PuntoSwitcher;
 import com.opentmn.opentmn.utils.RxSchedulers;
 import com.vk.sdk.api.VKError;
 import com.vk.sdk.api.VKParameters;
@@ -58,7 +59,7 @@ public class InvitePresenter {
                         mFiltered = mUsers;
                     } else {
                         for (SocialUser user : mUsers) {
-                            if (user.getName().toLowerCase().contains(text.toLowerCase())) {
+                          if (user.getName().toLowerCase().contains(text.toLowerCase()) || user.getName().toLowerCase().contains(PuntoSwitcher.switchToRu(text).toLowerCase())) {
                                 mFiltered.add(user);
                             }
                         }

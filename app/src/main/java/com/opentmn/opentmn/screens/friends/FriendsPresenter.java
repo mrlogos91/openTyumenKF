@@ -8,6 +8,7 @@ import com.opentmn.opentmn.data.repository.MyTyumenRepository;
 import com.opentmn.opentmn.model.Game;
 import com.opentmn.opentmn.model.User;
 import com.opentmn.opentmn.network.model.ApiResponseModel;
+import com.opentmn.opentmn.utils.PuntoSwitcher;
 import com.opentmn.opentmn.utils.RxSchedulers;
 import com.vk.sdk.VKSdk;
 
@@ -61,11 +62,13 @@ public class FriendsPresenter {
                     if(data.isSuccess()){
                         List<User> users = data.getData();
                         mCurrentPage = 1;
+                        mUsers = new ArrayList<>();
                         if(mSearchString.length() == 0) {
                           mUsers = users;
                         } else {
                           for (User user : users) {
-                            if (user.getName().toLowerCase().contains(mSearchString.toLowerCase())) {
+                            if (user.getName().toLowerCase().contains(mSearchString.toLowerCase()) || user.getName().toLowerCase().contains(
+                                PuntoSwitcher.switchToRu(mSearchString).toLowerCase())) {
                               mUsers.add(user);
                             }
                           }
