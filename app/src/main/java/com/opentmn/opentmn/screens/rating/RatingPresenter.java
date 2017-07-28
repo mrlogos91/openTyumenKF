@@ -6,7 +6,6 @@ import com.opentmn.opentmn.data.repository.MyTyumenRepository;
 import com.opentmn.opentmn.model.Game;
 import com.opentmn.opentmn.model.User;
 import com.opentmn.opentmn.network.model.ApiResponseModel;
-import com.opentmn.opentmn.utils.PuntoSwitcher;
 import com.opentmn.opentmn.utils.RxSchedulers;
 
 import java.util.ArrayList;
@@ -50,23 +49,16 @@ public class RatingPresenter {
                     @Override
                     public Observable<ApiResponseModel<List<User>>> call(TextViewTextChangeEvent textViewTextChangeEvent) {
                         mSearchString = textViewTextChangeEvent.text().toString();
-                        return mRepository.users(mUser.getToken(), 1, PER_PAGE,null, 0, 0).compose(RxSchedulers.async());
+                        if(mSearchString.length() == 0)
+                            mSearchString = null;
+                        return mRepository.users(mUser.getToken(), 1, PER_PAGE, mSearchString, 0, 0).compose(RxSchedulers.async());
                     }
                 })
                 .subscribe(data -> {
                     if(data.isSuccess()){
                         List<User> users = data.getData();
                         mCurrentPage = 1;
-                        mUsers = new ArrayList<>();
-                        if(mSearchString.length() == 0) {
-                          mUsers = users;
-                        } else {
-                          for (User user : users) {
-                            if (user.getName().toLowerCase().contains(mSearchString.toLowerCase()) || user.getName().toLowerCase().contains(PuntoSwitcher.switchToRu(mSearchString).toLowerCase())) {
-                              mUsers.add(user);
-                            }
-                          }
-                        }
+                        mUsers = users;
                         mListEnded = users.size() == 0;
                         mRatingView.showUsers(mUsers);
                     } else {
