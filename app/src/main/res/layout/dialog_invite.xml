@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+      android:layout_width="@dimen/dialog_width"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      >
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:layout_alignBottom="@+id/content_layout"
+          android:layout_alignLeft="@+id/content_layout"
+          android:layout_alignRight="@+id/content_layout"
+          android:layout_alignTop="@+id/content_layout"
+          android:scaleType="fitXY"
+          android:src="@mipmap/popup_window"
+          />
+
+        <LinearLayout
+          android:id="@+id/content_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:orientation="vertical">
+
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:src="@mipmap/popup_type_ic_3"/>
+
+
+            <com.opentmn.opentmn.widget.TextView
+              android:id="@+id/subtitle_text_view"
+              android:layout_width="210dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_gravity="center_horizontal"
+              android:gravity="center"
+              android:text="Введите текст приглашения"
+              android:textColor="@android:color/white"
+              android:textSize="15sp"
+              app:customTypeface="@string/font_medium_path"/>
+
+            <com.opentmn.opentmn.widget.EditText
+              android:id="@+id/edit_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="16dp"
+              android:layout_gravity="center_horizontal"
+              android:padding="@dimen/textfield_padding"
+              android:background="@mipmap/l_text_field"
+              android:gravity="center"
+              android:singleLine="false"
+              android:textColor="@color/text_brown"
+              android:textSize="@dimen/profile_edit_edit_text_size"
+              app:customTypeface="@string/font_medium_path"
+              tools:text="Привет Егор как твои дела давай ты начнешь игру"/>
+
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:layout_marginBottom="18dp"
+              android:layout_gravity="center_horizontal">
+
+                <com.opentmn.opentmn.widget.Button
+                  android:id="@+id/button_cancel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:paddingBottom="@dimen/dialog_button_bottom_padding"
+                  android:background="@drawable/button_dialog_red_selector"
+                  android:text="Отмена"
+                  android:textColor="@android:color/white"
+                  android:textSize="13sp"
+                  app:customTypeface="@string/font_heavy_path"/>
+
+                <com.opentmn.opentmn.widget.Button
+                  android:id="@+id/button_confirm"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_gravity="center_horizontal"
+                  android:paddingBottom="@dimen/dialog_button_bottom_padding"
+                  android:background="@drawable/button_dialog_blue_selector"
+                  android:text="Отправить"
+                  android:textColor="@android:color/white"
+                  android:textSize="13sp"
+                  app:customTypeface="@string/font_heavy_path"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -18,6 +18,7 @@ import com.opentmn.opentmn.model.SocialUser;
 import com.opentmn.opentmn.model.User;
 import com.opentmn.opentmn.screens.base.BaseActivity;
 import com.opentmn.opentmn.screens.dialogs.InputDialog;
+import com.opentmn.opentmn.screens.dialogs.InviteDialog;
 import com.opentmn.opentmn.screens.dialogs.MessageDialog;
 import com.opentmn.opentmn.screens.profile.ProfileActivity;
 import com.opentmn.opentmn.widget.Toolbar;
@@ -80,7 +81,18 @@ public class InviteActivity extends BaseActivity implements InviteView, InviteAd
 
     @Override
     public void onInviteClick(SocialUser socialUser) {
-        mPresenter.onInviteClick(this, socialUser);
+        InviteDialog giftDialog = InviteDialog.getInstance();
+        giftDialog.show(getSupportFragmentManager(), "gift");
+        giftDialog.setOnDialogButtonClickListener(new InviteDialog.OnDialogButtonClickListener() {
+            @Override
+            public void onConfirmClick(DialogFragment dialogFragment, String text) {
+                if(text.length() == 0)
+                    return;
+                dialogFragment.dismiss();
+                mPresenter.onInviteClick(getApplicationContext(), socialUser, text);
+            }
+        });
+
     }
 
     @Override

@@ -92,10 +92,11 @@ public class InvitePresenter {
         mView.addSubscription(subscription);
     }
 
-    public void onInviteClick(Context context, SocialUser socialUser) {
+    public void onInviteClick(Context context, SocialUser socialUser, String text) {
         HashMap<String, Object> params = new HashMap<>();
+
         params.put("user_id", socialUser.getId());
-        params.put("message", context.getResources().getString(R.string.social_invite_text));
+        params.put("message", text + "\n" + context.getResources().getString(R.string.social_invite_text));
         params.put("attachment", "photo308416709_456239077");
         VKRequest vkRequest = new VKRequest("messages.send", new VKParameters(params));
         mView.showProgress();
