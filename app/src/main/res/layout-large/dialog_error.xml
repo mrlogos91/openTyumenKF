@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/content_layout"
+            android:layout_alignLeft="@+id/content_layout"
+            android:layout_alignRight="@+id/content_layout"
+            android:layout_alignTop="@+id/content_layout"
+            android:layout_marginTop="32dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/popup_window" />
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/popup_type_ic_1" />
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/alert_error_title"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:customTypeface="@string/font_heavy_path" />
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/subtitle_text_view"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:customTypeface="@string/font_medium_path" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="12dp">
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_dialog_red_selector"
+                    android:paddingBottom="@dimen/dialog_button_bottom_padding"
+                    android:text="Отмена"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    app:customTypeface="@string/font_heavy_path" />
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/button_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_dialog_blue_selector"
+                    android:paddingBottom="@dimen/dialog_button_bottom_padding"
+                    android:text="Повторить"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    app:customTypeface="@string/font_heavy_path" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

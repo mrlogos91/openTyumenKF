@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:scaleType="fitXY"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@mipmap/app_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="4dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5">
+
+        <ImageView
+            android:id="@+id/action_bar_navigation_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/app_bar_btn_menu" />
+
+        <com.opentmn.opentmn.widget.TextView
+            android:id="@+id/action_bar_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:text="Открой свою Тюмень"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:customTypeface="fonts/FiraSans-Heavy.otf" />
+
+        <ImageView
+            android:id="@+id/action_bar_right_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/nav_click_layout"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"/>
+
+    <FrameLayout
+        android:id="@+id/right_click_layout"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="right"/>
+
+</merge>

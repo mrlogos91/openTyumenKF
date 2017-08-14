@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:layout_marginTop="3dp"
+    android:scaleX="1.5"
+    android:scaleY="1.5">
+
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="47dp"
+        android:background="@mipmap/lobby_cat_substrate">
+
+        <com.opentmn.opentmn.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11dp"
+            android:text="До конца игры:"
+            android:textColor="@color/game_time_title_text"
+            android:textSize="10sp"
+            app:customTypeface="@string/font_book_path" />
+
+        <com.opentmn.opentmn.widget.TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="2dp"
+            android:text="19 ч 15 м"
+            android:textColor="@color/game_time_value_text"
+            android:textSize="13sp"
+            app:customTypeface="@string/font_medium_path" />
+
+        <com.opentmn.opentmn.widget.TextView
+            android:id="@+id/status_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="11dp"
+            android:gravity="right"
+            android:text="Вы выбираете категорию"
+            android:textColor="@color/game_status_red"
+            android:textSize="13sp"
+            app:customTypeface="@string/font_medium_path" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_substrate_view"
+        android:layout_width="324dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/profile_games_substrate">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/rating_ava_substrate">
+
+                <ImageView
+                    android:id="@+id/ava_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:scaleType="centerCrop" />
+
+            </FrameLayout>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="13sp"
+                app:customTypeface="@string/font_medium_path" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp"
+            android:background="@mipmap/my_games_score">
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/score_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:text="0:0"
+                android:textColor="@color/text_blue_tr"
+                android:textSize="22sp"
+                app:customTypeface="@string/font_bold_path" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1">
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/enemy_name_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="13sp"
+                app:customTypeface="@string/font_medium_path" />
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/rating_ava_substrate">
+
+                <ImageView
+                    android:id="@+id/enemy_ava_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:scaleType="centerCrop" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

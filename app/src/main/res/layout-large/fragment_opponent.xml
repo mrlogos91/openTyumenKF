@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/background_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/toolbar_height"
+            android:layout_weight="1"
+            android:scaleX="1.5"
+            android:scaleY="1.5">
+
+
+            <LinearLayout
+                android:id="@+id/data_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Выберите соперника"
+                    android:textColor="@color/text_brown"
+                    android:textSize="22sp"
+                    app:customTypeface="@string/font_heavy_path" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/title_underline" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp">
+
+                    <com.opentmn.opentmn.widget.Button
+                        android:id="@+id/play_friend_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_red_selector"
+                        android:paddingBottom="@dimen/button_bottom_padding"
+                        android:stateListAnimator="@null"
+                        android:text="Друзья"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        app:customTypeface="@string/font_heavy_path" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/button_image_bottom_margin"
+                        android:layout_marginLeft="@dimen/button_image_left_margin"
+                        android:src="@mipmap/new_game_btn_ic_1" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp">
+
+                    <com.opentmn.opentmn.widget.Button
+                        android:id="@+id/play_random_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_blue_selector"
+                        android:paddingBottom="@dimen/button_bottom_padding"
+                        android:stateListAnimator="@null"
+                        android:text="Случайный игрок"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        app:customTypeface="@string/font_heavy_path" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/button_image_bottom_margin"
+                        android:layout_marginLeft="@dimen/button_image_left_margin"
+                        android:src="@mipmap/new_game_btn_ic_2" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp">
+
+                    <com.opentmn.opentmn.widget.Button
+                        android:id="@+id/play_search_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_green_selector"
+                        android:paddingBottom="@dimen/button_bottom_padding"
+                        android:stateListAnimator="@null"
+                        android:text="Поиск"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        app:customTypeface="@string/font_heavy_path" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/button_image_bottom_margin"
+                        android:layout_marginLeft="@dimen/button_image_left_margin"
+                        android:src="@mipmap/new_game_btn_ic_3" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:scaleX="1.5"
+            android:scaleY="1.5">
+
+            <com.opentmn.opentmn.widget.Button
+                android:id="@+id/play_training_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/new_game_btn_orange_1"
+                android:paddingBottom="4dp"
+                android:text="Тренировка"
+                android:textSize="13sp"
+                app:customTypeface="@string/font_heavy_path" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp">
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/invite_vk_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_vk_invite_selector"
+                    android:paddingBottom="@dimen/button_bottom_padding"
+                    android:text="пригласить из вконтакте"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    app:customTypeface="@string/font_heavy_path" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

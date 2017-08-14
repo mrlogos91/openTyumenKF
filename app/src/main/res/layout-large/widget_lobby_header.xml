@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lobby_header_height"
+    android:background="@mipmap/edit_profile_ava_bg"
+    android:clipChildren="false">
+
+    <FrameLayout
+        android:layout_width="@dimen/lobby_header_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:layout_width="@dimen/lobby_ava_container_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false">
+
+            <FrameLayout
+                android:layout_width="@dimen/lobby_ava_substrate_size"
+                android:layout_height="@dimen/lobby_ava_substrate_size"
+                android:background="@mipmap/profile_ava_substrate"
+                android:layout_gravity="center_horizontal"
+                android:clipChildren="false">
+
+                <ImageView
+                    android:id="@+id/ava_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="@dimen/lobby_ava_substrate_padding"
+                    android:clipChildren="false"/>
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/add_friend_creator_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_add_friend_selector"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-10dp"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="@dimen/lobby_ava_container_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:textSize="11sp"
+                android:textColor="@color/lobby_round_title"
+                android:text="Иван Серегеевич fff"
+                android:gravity="center"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                app:customTypeface="@string/font_book_path"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/lobby_ava_container_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:clipChildren="false">
+
+            <FrameLayout
+                android:layout_width="@dimen/lobby_ava_substrate_size"
+                android:layout_height="@dimen/lobby_ava_substrate_size"
+                android:background="@mipmap/profile_ava_substrate"
+                android:layout_gravity="center_horizontal"
+                android:clipChildren="false">
+
+                <ImageView
+                    android:id="@+id/enemy_ava_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="@dimen/lobby_ava_substrate_padding"/>
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/add_friend_follower_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_add_friend_selector"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginRight="-10dp"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/enemy_name_text_view"
+                android:layout_width="@dimen/lobby_ava_container_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:textSize="11sp"
+                android:textColor="@color/lobby_round_title"
+                android:gravity="center"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                app:customTypeface="@string/font_book_path" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/lobby_ava_substrate_size"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:id="@+id/score_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/lobby_score_2">
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:id="@+id/score_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:text="0:0"
+                    android:layout_marginTop="1dp"
+                    app:customTypeface="@string/font_bold_path"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background_1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@mipmap/logoshine" />
+
+        <com.opentmn.opentmn.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="-20dp"
+            android:gravity="center"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:text="E-mail"
+            android:textColor="@color/profile_edit_text"
+            android:textSize="@dimen/profile_edit_text_size"
+            app:customTypeface="fonts/FiraSans-Heavy.otf" />
+
+        <com.opentmn.opentmn.widget.EditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="40dp"
+            android:background="@mipmap/b_text_field"
+            android:gravity="center"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:textSize="28sp"
+            app:customTypeface="@string/font_medium_path"
+            tools:text="mrlogos91@gmail.com" />
+
+        <com.opentmn.opentmn.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:text="Пароль"
+            android:textColor="@color/profile_edit_text"
+            android:textSize="@dimen/profile_edit_text_size"
+            app:customTypeface="fonts/FiraSans-Heavy.otf" />
+
+        <com.opentmn.opentmn.widget.EditText
+            android:id="@+id/pass_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="40dp"
+            android:background="@mipmap/b_text_field"
+            android:gravity="center"
+            android:password="true"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:textSize="28sp"
+            app:customTypeface="@string/font_medium_path"
+            tools:text="383838938383" />
+
+        <com.opentmn.opentmn.widget.Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/button_blue_selector"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="@string/auth_login"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:customTypeface="@string/font_heavy_path" />
+
+        <com.opentmn.opentmn.widget.Button
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="@string/auth_forgot_passwd"
+            android:textAllCaps="false"
+            android:textColor="@color/text_blue_tr"
+            android:textScaleX="1.5"
+            android:textSize="14sp"
+            app:customTypeface="@string/font_medium_path" />
+
+
+
+    </LinearLayout>
+
+    <com.opentmn.opentmn.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Авторизация через почту"/>
+
+</FrameLayout>

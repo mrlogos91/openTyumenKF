@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.opentmn.opentmn.widget.Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="Черный список"
+        android:textColor="@color/text_blue_tr"
+        android:textSize="15sp"
+        app:customTypeface="fonts/FiraSans-Medium.otf" />
+
+</FrameLayout>

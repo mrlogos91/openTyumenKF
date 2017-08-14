@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="278dp"
+        android:layout_height="32dp"
+        android:background="@mipmap/lobby_cat_substrate"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp">
+
+        <com.opentmn.opentmn.widget.TextView
+            android:id="@+id/category_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:textColor="@color/lobby_round_subtitle"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Технологии"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            app:customTypeface="@string/font_medium_path" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/lobby_round_width"
+        android:layout_height="@dimen/lobby_round_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/profile_games_substrate">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/quest_1_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/lobby_round_2"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:text="1"
+                    android:alpha="0.8"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    app:customTypeface="@string/font_bold_path"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/quest_2_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/lobby_round_2"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:alpha="0.8"
+                    android:text="2"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    app:customTypeface="@string/font_bold_path"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/quest_3_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/lobby_round_2"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:alpha="0.8"
+                    android:text="3"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    app:customTypeface="@string/font_bold_path"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/quest_enemy_1_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/lobby_round_2"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:alpha="0.8"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    app:customTypeface="@string/font_bold_path"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/quest_enemy_2_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/lobby_round_2"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:alpha="0.8"
+                    android:text="2"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    app:customTypeface="@string/font_bold_path"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/quest_enemy_3_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/lobby_round_2"/>
+
+                <com.opentmn.opentmn.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:alpha="0.8"
+                    android:text="3"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    app:customTypeface="@string/font_bold_path"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/number_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/lobby_round_title"
+                android:text="1"
+                android:layout_gravity="center_horizontal"
+                app:customTypeface="@string/font_heavy_path"/>
+
+            <com.opentmn.opentmn.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/lobby_round_subtitle"
+                android:text="раунд"
+                android:layout_marginTop="-6dp"
+                app:customTypeface="@string/font_book_path"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</merge>

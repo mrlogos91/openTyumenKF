@@ -244,17 +244,15 @@
                 android:orientation="vertical">
 
                 <com.opentmn.opentmn.widget.Button
-                  android:id="@+id/play_button"
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_marginTop="26dp"
-                  android:layout_marginLeft="35dp"
-                  android:layout_marginRight="35dp"
-                  android:layout_gravity="center_horizontal"
-                  android:background="@drawable/button_blue_selector"
-                  android:text="@string/menu_item_play"
-                  android:textSize="18sp"
-                  app:customTypeface="@string/font_heavy_path"/>
+                    android:id="@+id/play_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="26dp"
+                    android:background="@drawable/button_blue_selector"
+                    android:text="@string/menu_item_play"
+                    android:textSize="18sp"
+                    app:customTypeface="@string/font_heavy_path" />
 
                 <com.opentmn.opentmn.widget.Button
                   android:id="@+id/tasks_button"
@@ -272,12 +270,12 @@
                     android:id="@+id/add_question_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_menu_green_selector"
-                    android:textSize="13sp"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/menu_item_add_question"
                     android:layout_marginTop="10dp"
-                    app:customTypeface="@string/font_heavy_path"/>
+                    android:background="@drawable/button_menu_green_selector"
+                    android:text="@string/menu_item_add_question"
+                    android:textSize="13sp"
+                    app:customTypeface="@string/font_heavy_path" />
 
                 <com.opentmn.opentmn.widget.Button
                     android:id="@+id/rules_button"

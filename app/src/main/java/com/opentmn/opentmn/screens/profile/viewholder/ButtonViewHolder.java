@@ -39,8 +39,8 @@ public class ButtonViewHolder extends BaseViewHolder {
         mButton.setTextColor(Color.WHITE);
         mButton.setPadding(0, 0, 0, resources.getDimensionPixelSize(R.dimen.button_bottom_padding));
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) mButton.getLayoutParams();
-        layoutParams.topMargin = 0;
-        layoutParams.bottomMargin = 0;
+        layoutParams.topMargin = 20;
+        layoutParams.bottomMargin = 20;
     }
 
     public void setupFinishedGamesButton() {

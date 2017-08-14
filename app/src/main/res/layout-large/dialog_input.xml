@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/content_layout"
+            android:layout_alignLeft="@+id/content_layout"
+            android:layout_alignRight="@+id/content_layout"
+            android:layout_alignTop="@+id/content_layout"
+            android:layout_marginTop="32dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/window" />
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/popup_type_ic_2" />
+
+            <com.opentmn.opentmn.widget.TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="ВВЕДИТЕ КОД С КАРТИНКИ"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:customTypeface="@string/font_heavy_path" />
+
+            <FrameLayout
+                android:layout_width="134dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13dp"
+                android:background="@mipmap/captcha_substrate">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="@dimen/captcha_img_corner_radius" />
+
+            </FrameLayout>
+
+            <com.opentmn.opentmn.widget.EditText
+                android:id="@+id/edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:background="@mipmap/l_text_field"
+                android:gravity="center"
+                android:paddingLeft="@dimen/textfield_padding"
+                android:paddingRight="@dimen/textfield_padding"
+                android:textColor="@color/text_brown"
+                app:customTypeface="@string/font_medium_path" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="14dp">
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_dialog_red_selector"
+                    android:paddingBottom="@dimen/dialog_button_bottom_padding"
+                    android:text="Отмена"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    app:customTypeface="@string/font_heavy_path" />
+
+                <com.opentmn.opentmn.widget.Button
+                    android:id="@+id/button_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_dialog_blue_selector"
+                    android:paddingBottom="@dimen/dialog_button_bottom_padding"
+                    android:text="Отправить"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    app:customTypeface="@string/font_heavy_path" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

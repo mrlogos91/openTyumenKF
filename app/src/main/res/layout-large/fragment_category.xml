@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/toolbar_height"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:id="@+id/data_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:visibility="gone">
+
+        <com.opentmn.opentmn.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/choose_category_label"
+            android:textColor="@color/text_brown"
+            android:textSize="22sp"
+            app:customTypeface="fonts/FiraSans-Heavy.otf" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:src="@mipmap/title_underline" />
+
+        <com.opentmn.opentmn.widget.Button
+            android:id="@+id/category_1_button"
+            android:layout_width="313dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/button_red_selector"
+            android:clipChildren="false"
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:customTypeface="fonts/FiraSans-Heavy.otf" />
+
+        <com.opentmn.opentmn.widget.Button
+            android:id="@+id/category_2_button"
+            android:layout_width="313dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_blue_selector"
+            android:clipChildren="false"
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:customTypeface="fonts/FiraSans-Heavy.otf" />
+
+        <com.opentmn.opentmn.widget.Button
+            android:id="@+id/category_3_button"
+            android:layout_width="313dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_green_selector"
+            android:clipChildren="false"
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:customTypeface="fonts/FiraSans-Heavy.otf" />
+
+    </LinearLayout>
+
+</FrameLayout>
