@@ -91,7 +91,7 @@
     <string name="game_status_all_answered">Игра закончена</string>
 
     //Socials
-    <string name="social_invite_text">Игра про любимый город! Докажи, что ты лучше других знаешь Тюмень!\nhttp://opentmn.ru/share</string>
+    <string name="social_invite_text">Игра про любимый город! Докажи, что ты лучше других знаешь Тюмень!\nhttp://opentmn.ru</string>
     <string name="social_share_win">Я победил %1$s в "Открой свою Тюмень"! Узнай о Тюмени больше!</string>
     <string name="social_share_lose">Я и %1$s играем в "Открой свою Тюмень"! Узнай о Тюмени больше!</string>
     <string name="social_share_draw">Я и %1$s играем в "Открой свою Тюмень"! Узнай о Тюмени больше!</string>
