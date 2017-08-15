@@ -21,6 +21,7 @@ public class Question implements Serializable {
         picture = question.getPicture();
         userAnswer = question.getUserAnswer();
         answers = new ArrayList<>();
+        ref  = question.getRef();
         if(question.getAnswers() != null) {
             for(Answer answer : question.getAnswers())
                 answers.add(new Answer(answer));
@@ -59,6 +60,7 @@ public class Question implements Serializable {
 
     private String source;
 
+    @SerializedName("ref")
     private String ref;
 
     private String[] answerArr;
