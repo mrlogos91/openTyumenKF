@@ -27,6 +27,13 @@
                 android:layout_marginBottom="25dp"
                 android:background="@mipmap/question_substrate_n" />
 
+            <Button
+              android:id="@+id/question_ref_view"
+              android:layout_width="75dp"
+              android:layout_height="75dp"
+              android:layout_gravity="right"
+              android:background="@mipmap/menu_ic_1"/>
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

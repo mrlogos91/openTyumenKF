@@ -2,6 +2,7 @@ package com.opentmn.opentmn.screens.menu;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.content.IntentCompat;
@@ -128,6 +129,12 @@ public class MenuActivity extends BaseActivity implements MenuView {
     @OnClick(R.id.rules_button)
     void onRulesClick() {
         showFragment(R.id.nav_rules, getString(R.string.menu_item_rules));
+    }
+
+    @OnClick(R.id.review_button)
+    void OnReviewClick() {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://opentmn.ru/#go-feedback"));
+        startActivity(browserIntent);
     }
 
     @OnClick(R.id.logout_button)

@@ -73,6 +73,7 @@ public class LobbyActivity extends BaseActivity implements LobbyView, View.OnCli
         setContentView(R.layout.activity_lobby);
         ButterKnife.bind(this);
 
+        Game game = (Game) getIntent().getSerializableExtra(EXTRA_GAME_KEY);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setNavigationImageRes(Toolbar.NAVIGATION_BACK_ICON);
         toolbar.setOnNavigationClickListener(new View.OnClickListener() {
@@ -81,7 +82,7 @@ public class LobbyActivity extends BaseActivity implements LobbyView, View.OnCli
                 finish();
             }
         });
-        Game game = (Game) getIntent().getSerializableExtra(EXTRA_GAME_KEY);
+
         boolean isNewGame = getIntent().getBooleanExtra(EXTRA_IS_NEW_GAME_KEY, false);
         mPresenter = new LobbyPresenter(this, game, isNewGame);
         mPresenter.onCreate();

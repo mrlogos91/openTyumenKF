@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="3dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -40,9 +41,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:gravity="right"
-            android:textSize="13sp"
+            android:textSize="11sp"
             android:layout_marginRight="11dp"
             android:text="Вы выбираете категорию"
+            android:padding="1dp"
             android:textColor="@color/game_status_red"
             app:customTypeface="@string/font_medium_path"/>
 
@@ -116,16 +118,18 @@
             android:layout_marginRight="1dp">
 
             <com.opentmn.opentmn.widget.TextView
-                android:id="@+id/enemy_name_text_view"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:textSize="13sp"
-                android:layout_gravity="center_vertical"
-                android:gravity="right"
-                app:customTypeface="@string/font_medium_path"/>
+              android:id="@+id/enemy_name_text_view"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:layout_gravity="center_vertical"
+              android:padding="5dp"
+              android:gravity="right"
+              android:textSize="13sp"
+              app:customTypeface="@string/font_medium_path"
+              tools:text="Артем Егоров"/>
 
             <FrameLayout
                 android:layout_width="45dp"

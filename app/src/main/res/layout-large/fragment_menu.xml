@@ -305,6 +305,21 @@
                   app:customTypeface="@string/font_heavy_path"/>
 
                 <com.opentmn.opentmn.widget.Button
+                  android:id="@+id/review_button"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"
+                  android:layout_gravity="center_horizontal"
+                  android:paddingTop="20dp"
+                  android:paddingBottom="30dp"
+                  android:background="@drawable/button_menu_green_selector"
+                  android:text="Оставить отзыв"
+                  android:textSize="33sp"
+                  app:customTypeface="@string/font_heavy_path"/>
+
+                <com.opentmn.opentmn.widget.Button
                   android:id="@+id/logout_button"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
