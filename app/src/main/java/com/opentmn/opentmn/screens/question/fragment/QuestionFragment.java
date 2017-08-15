@@ -19,6 +19,7 @@ import com.opentmn.opentmn.model.AnswerAlias;
 import com.opentmn.opentmn.model.Game;
 import com.opentmn.opentmn.model.Question;
 import com.opentmn.opentmn.screens.base.BaseFragment;
+import com.opentmn.opentmn.screens.dialogs.MessageDialog;
 import com.opentmn.opentmn.screens.question.QuestionsActivity;
 import com.opentmn.opentmn.screens.question.QuestionsPresenter;
 
@@ -41,6 +42,7 @@ public class QuestionFragment extends BaseFragment implements QuestionView {
     private final static String BUNDLE_GAME_KEY = "game";
     private final static String BUNDLE_QUEST_NUM_KEY = "quest_num";
     private final static String BUNDLE_ROUND_NUM_KEY = "round_num";
+    String refHeader, refText;
 
     public static QuestionFragment newInstance(Game game, int roundNumber, int questionNumber) {
         QuestionFragment fragment = new QuestionFragment();
@@ -53,7 +55,8 @@ public class QuestionFragment extends BaseFragment implements QuestionView {
     }
 
     private QuestionPresenter mPresenter;
-
+    @BindView(R.id.question_ref_view)
+    View mQuestionRefView;
     @BindView(R.id.question_click_view)
     View mQuestionClickView;
     @BindViews({R.id.answer_1_button, R.id.answer_2_button, R.id.answer_3_button, R.id.answer_4_button})
@@ -107,6 +110,11 @@ public class QuestionFragment extends BaseFragment implements QuestionView {
         super.onResume();
     }
 
+    @OnClick({R.id.question_ref_view})
+    void refViewCleci(View view) {
+        MessageDialog messageDialog = MessageDialog.getInstance(refHeader, refText);
+        messageDialog.show(getActivity().getSupportFragmentManager(), null);
+    }
     @OnClick({R.id.answer_1_button, R.id.answer_2_button, R.id.answer_3_button, R.id.answer_4_button})
     void answerButtonClick(View view) {
         int index = Integer.parseInt(view.getTag().toString());
@@ -131,6 +139,12 @@ public class QuestionFragment extends BaseFragment implements QuestionView {
     @Override
     public void showQuestion(Question question) {
         mQuestionClickView.setEnabled(false);
+        refHeader = "Справка";
+        refText = question.getRef();
+        if (refText == null){
+            refHeader = "Ой";
+            refText = "Cправка к этому вопросу отсутсвует";
+        }
         List<Answer> answers = question.getAnswers();
         for(int i = 0; i < answers.size(); i++) {
             mAnswerButtons[i].setBackgroundResource(R.mipmap.answer_quest_btn_1);
