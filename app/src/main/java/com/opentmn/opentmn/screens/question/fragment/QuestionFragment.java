@@ -102,6 +102,7 @@ public class QuestionFragment extends BaseFragment implements QuestionView {
         int questNumber = args.getInt(BUNDLE_QUEST_NUM_KEY);
         int roundNumber = args.getInt(BUNDLE_ROUND_NUM_KEY);
         mPresenter = new QuestionPresenter(this, game, roundNumber, questNumber);
+        mQuestionRefView.setVisibility(View.GONE);
         mPresenter.init();
     }
 
@@ -181,6 +182,7 @@ public class QuestionFragment extends BaseFragment implements QuestionView {
     @Override
     public void showRightAnswer(int index) {
         mAnswerButtons[index].setBackgroundResource(R.mipmap.game_answer_btn_right);
+        mQuestionRefView.setVisibility(View.VISIBLE);
     }
 
     @Override

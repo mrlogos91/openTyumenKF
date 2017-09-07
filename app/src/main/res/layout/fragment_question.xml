@@ -29,11 +29,11 @@
                     />
             <Button
               android:id="@+id/question_ref_view"
-              android:layout_width="50dp"
-              android:layout_height="50dp"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:layout_marginTop="-5dp"
               android:layout_gravity="right"
-              android:background="@mipmap/menu_ic_1"
-              />
+              android:background="@mipmap/menu_ic_1"/>
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

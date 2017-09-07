@@ -29,8 +29,9 @@
 
             <Button
               android:id="@+id/question_ref_view"
-              android:layout_width="75dp"
-              android:layout_height="75dp"
+              android:layout_width="120dp"
+              android:layout_height="120dp"
+              android:layout_marginTop="-10dp"
               android:layout_gravity="right"
               android:background="@mipmap/menu_ic_1"/>
 
