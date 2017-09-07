@@ -15,6 +15,9 @@ public final class Config {
 
 
     //Socials
+    public final static String OK_APP_KEY = "CBAMDNLLEBABABABA";
+    public final static String OK_APP_ID = "1253849856";
+    public final static String REDIRECT_URL = "ok1253849856://authorize";
     public final static String VK_APP_KEY = "0YTAiJeRetS92sMyHmCL";
     public final static String VK_APP_ID = "5755635";
     public final static String FB_APP_ID = "339670136401972";

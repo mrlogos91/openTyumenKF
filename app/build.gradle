@@ -97,6 +97,7 @@ dependencies {
 
     compile "com.vk:androidsdk:+"
     compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile 'ru.ok:odnoklassniki-android-sdk:+'
 
     compile "com.jakewharton:butterknife:$butterKnifeVersion"
     apt "com.jakewharton:butterknife-compiler:$butterKnifeVersion"

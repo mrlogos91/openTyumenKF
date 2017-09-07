@@ -25,10 +25,22 @@
         <activity
             android:name="com.opentmn.opentmn.MainActivity"
             android:screenOrientation="portrait">
-
-
-
         </activity>
+
+        <activity
+          android:name="ru.ok.android.sdk.OkAuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                  android:host="ok{1253849856}"
+                  android:scheme="okauth"/>
+            </intent-filter>
+        </activity>
+
         <activity
             android:name="com.opentmn.opentmn.screens.login.LoginActivity"
             android:screenOrientation="portrait"/>

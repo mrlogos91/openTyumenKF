@@ -14,6 +14,8 @@ public interface LoginView extends BaseView {
 
     void authFB();
 
+    void authOK();
+
     void openEmailAuth();
 
     void openEmailRegistration();

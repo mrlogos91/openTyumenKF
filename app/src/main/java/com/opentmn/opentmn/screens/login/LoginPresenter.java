@@ -56,7 +56,9 @@ public class LoginPresenter {
     public void clickFB(){
         mLoginView.authFB();
     }
-
+    public void clickOK(){
+        mLoginView.authOK();
+    }
     public void clickEnter(){
         mLoginView.openEmailAuth();
     }

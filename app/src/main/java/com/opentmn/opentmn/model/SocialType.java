@@ -10,4 +10,5 @@ public @interface SocialType {
 
     String VK = "vk";
     String FB = "fb";
+    String OK = "ok";
 }
