@@ -21,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.github.javiersantos.appupdater.AppUpdater;
 import com.opentmn.opentmn.data.RepositoryProvider;
 import com.opentmn.opentmn.data.keyvalue.KeyValueStorage;
 import com.opentmn.opentmn.model.Alias;
@@ -102,7 +103,6 @@ public class MainActivity extends BaseActivity
                 .replace(R.id.content_frame, new MyGamesFragment())
                 .commit();*/
         checkGameId();
-
         int fragmentId = getIntent().getIntExtra(EXTRA_FRAGMENT_ID, 0);
         String title = getIntent().getStringExtra(EXTRA_TITLE);
         showFragment(fragmentId, title);

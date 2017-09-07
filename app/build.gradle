@@ -28,8 +28,8 @@ android {
         applicationId "com.opentmn.opentmn"
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 6
-        versionName "1.1.4"
+        versionCode 7
+        versionName "1.2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -98,6 +98,8 @@ dependencies {
     compile "com.vk:androidsdk:+"
     compile 'com.facebook.android:facebook-android-sdk:4.+'
     compile 'ru.ok:odnoklassniki-android-sdk:+'
+    compile 'com.github.javiersantos:AppUpdater:+'
+    compile 'org.jsoup:jsoup:+'
 
     compile "com.jakewharton:butterknife:$butterKnifeVersion"
     apt "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
