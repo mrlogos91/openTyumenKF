@@ -31,6 +31,7 @@ android {
         versionCode 7
         versionName "1.2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -46,6 +47,7 @@ android {
             keyAlias 'mytyumen'
             keyPassword '123456'
             storePassword '123456'
+
 
         }
     }
@@ -100,6 +102,7 @@ dependencies {
     compile 'ru.ok:odnoklassniki-android-sdk:+'
     compile 'com.github.javiersantos:AppUpdater:+'
     compile 'org.jsoup:jsoup:+'
+    compile 'com.android.support:multidex:1.0.0'
 
     compile "com.jakewharton:butterknife:$butterKnifeVersion"
     apt "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
