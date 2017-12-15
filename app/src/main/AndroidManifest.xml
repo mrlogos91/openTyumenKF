@@ -46,6 +46,10 @@
             android:screenOrientation="portrait"/>
 
         <activity
+            android:name="com.opentmn.opentmn.screens.banner.BannerActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
             android:name="com.opentmn.opentmn.screens.restore.RestoreActivity"
             android:screenOrientation="portrait"/>
 

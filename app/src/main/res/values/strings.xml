@@ -2,7 +2,7 @@
     <string name="app_name">Открой свою Тюмень</string>
 
     <integer name="com_vk_sdk_AppId">5755635</integer>
-    <string name="fb">339670136401972</string>
+    <string name="fb">153288492097036</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -114,7 +114,7 @@
     <string name="alert_game_created_title">Игра создана</string>
     <string name="alert_game_created_message">Вы сможете начать игру как только ваш соперник подтвердит запрос</string>
     <string name="alert_gift_success_title">Ура!</string>
-    <string name="alert_gift_success_message">Подарок почти у вас! Мы проверяем его наличие на складе!</string>
+    <string name="alert_gift_success_message">Ваш заказ активирован. В течение 2 рабочих дней на вашу почту придет запрос на подтверждение</string>
     <string name="alert_gift_message">Для оформления заказа введите свой e-mail</string>
     <string name="alert_error_title">Ошибка!</string>
     <string name="alert_error_500_title">Ой!</string>

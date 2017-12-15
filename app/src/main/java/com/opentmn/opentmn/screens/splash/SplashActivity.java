@@ -24,6 +24,7 @@ import com.github.javiersantos.appupdater.AppUpdater;
 import com.opentmn.opentmn.Config;
 import com.opentmn.opentmn.MainActivity;
 import com.opentmn.opentmn.data.RepositoryProvider;
+import com.opentmn.opentmn.screens.banner.BannerActivity;
 import com.opentmn.opentmn.screens.base.BaseActivity;
 import com.opentmn.opentmn.screens.dialogs.ConfirmDialog;
 import com.opentmn.opentmn.screens.login.LoginActivity;
@@ -94,6 +95,8 @@ public class SplashActivity extends BaseActivity {
     } else {
       LoginActivity.start(this);
     }
+
+    startActivity(new Intent(this, BannerActivity.class));
   }
 
   public String getCurrentVersion() {
