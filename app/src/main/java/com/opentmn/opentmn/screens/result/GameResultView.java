@@ -20,6 +20,8 @@ public interface GameResultView extends BaseView {
 
     void showFbShareDialog(String text, String link);
 
+    void showGameResultDialog(GameResult gameResult);
+
     void showSmileSentDialog();
 
     void showStickerErrorDialog();

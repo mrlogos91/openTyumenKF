@@ -120,6 +120,11 @@
     <string name="alert_error_500_title">Ой!</string>
     <string name="alert_error_500_message">Что-то пошло не так…</string>
 
+    <string name="elapsed_games_title">Ура!</string>
+    <string name="elapsed_games_50_message">Ничего себе! Ты сыграл уже 50 игр. Давай еще?</string>
+    <string name="elapsed_games_100_message">Вот это да! 100 игр! Да ты просто огонь!</string>
+    <string name="elapsed_games_150_message">Привет! Сыграл 150 игр? На толстовку уже накопил?</string>
+
     <string name="yandex_api_key">249bcd5f-6455-48a1-8443-2fc0c9785eae</string>
 
     <string name="profile_place">место</string>

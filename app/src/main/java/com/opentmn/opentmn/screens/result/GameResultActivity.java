@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.StringRes;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -197,6 +198,31 @@ public class GameResultActivity extends BaseActivity implements GameResultView {
     public void showStickerErrorDialog() {
         MessageDialog messageDialog = MessageDialog.getInstance("ИНФОРМАЦИЯ", "Вы уже отправляли сопернику стикер");
         messageDialog.show(getSupportFragmentManager(), null);
+    }
+
+    @Override
+    public void showGameResultDialog(GameResult gameResult) {
+        @StringRes
+        int elapsedGamesMessage;
+        //TODO: ipopov 10.01.2018 вынести в константы валидируемое количество игр
+        switch (gameResult.getCountGames()) {
+            case 50:
+                elapsedGamesMessage = R.string.elapsed_games_50_message;
+                break;
+            case 100:
+                elapsedGamesMessage = R.string.elapsed_games_100_message;
+                break;
+            case 150:
+                elapsedGamesMessage = R.string.elapsed_games_150_message;
+                break;
+            default:
+                return;
+        }
+
+        MessageDialog messageDialog = MessageDialog.getInstance(
+                getString(R.string.elapsed_games_title),
+                getString(elapsedGamesMessage));
+        messageDialog.show(getSupportFragmentManager(), "elapsed");
     }
 
     @Override

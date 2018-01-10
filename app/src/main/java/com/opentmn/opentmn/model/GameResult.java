@@ -37,6 +37,9 @@ public class GameResult implements Serializable {
     @SerializedName("game_id")
     private int gameId;
 
+    @SerializedName("count_games")
+    private int countGames;
+
     public boolean isWinner() {
         return winner;
     }
@@ -72,4 +75,9 @@ public class GameResult implements Serializable {
     public int getGameId() {
         return gameId;
     }
+
+    public int getCountGames() {
+        return countGames;
+    }
+
 }

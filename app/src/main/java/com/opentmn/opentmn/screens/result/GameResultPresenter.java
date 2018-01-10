@@ -36,6 +36,7 @@ public class GameResultPresenter {
 
     public void init() {
         mGameResultView.showResult(mGameResult);
+        mGameResultView.showGameResultDialog(mGameResult);
     }
 
     public void onPlayAgainClick() {
