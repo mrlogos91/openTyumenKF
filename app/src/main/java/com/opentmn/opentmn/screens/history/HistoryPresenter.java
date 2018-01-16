@@ -54,25 +54,26 @@ public class HistoryPresenter {
             observable = observable
                     .doOnSubscribe(mView::showProgress)
                     .doAfterTerminate(mView::hideProgress);
-        Subscription subscription = observable.subscribe(response -> {
-            if(response.isSuccess()) {
-                List<Game> games = response.getData();
-                if(games.size() > 0) {
-                    mCurrentPage = page;
-                    if(page == 1)
-                        mGames = games;
-                    else
-                        mGames.addAll(games);
-                    mView.showGames(mGames);
-                } else {
-                    mListEnded = true;
-                }
-            } else {
-                mView.showApiResponseError(response, () -> loadMore());
-            }
-        }, throwable -> {
-            mView.showNetworkError(() -> loadMore());
-        });
+        Subscription subscription = observable
+                .subscribe(response -> {
+                    if (response.isSuccess()) {
+                        List<Game> games = response.getData();
+                        if (games.size() > 0) {
+                            mCurrentPage = page;
+                            if (page == 1)
+                                mGames = games;
+                            else
+                                mGames.addAll(games);
+                            mView.showGames(mGames);
+                        } else {
+                            mListEnded = true;
+                        }
+                    } else {
+                        mView.showApiResponseError(response, () -> loadMore());
+                    }
+                }, throwable -> {
+                    mView.showNetworkError(() -> loadMore());
+                });
         mView.addSubscription(subscription);
     }
 

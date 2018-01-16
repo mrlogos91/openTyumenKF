@@ -95,6 +95,8 @@ public class LobbyPresenter {
                     } else {
 
                     }
+                }, throwable -> {
+                    mLobbyView.showNetworkError(() -> init());
                 });
         mLobbyView.addSubscription(subscription);
     }

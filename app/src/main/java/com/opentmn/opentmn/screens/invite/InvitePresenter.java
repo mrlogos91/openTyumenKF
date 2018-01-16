@@ -65,6 +65,8 @@ public class InvitePresenter {
                         }
                     }
                     mView.showUsers(mFiltered);
+                }, throwable -> {
+                    mView.showNetworkError(() -> init());
                 });
         loadUsers(null, null);
     }
